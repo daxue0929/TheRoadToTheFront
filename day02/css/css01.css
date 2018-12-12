@@ -1,0 +1,48 @@
+@charset="utf-8";
+/*CSS Document*/
+#main{
+	width: 500px;
+	height: 200px;
+	background-color: pink;
+	border:20px red solid;
+}
+.span{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+	margin: 0 auto;	
+}
+#main .p1{
+	text-align: center;
+	font-size: 10px;
+	font-family: "宋体";
+	color: red;
+	font-style: italic;
+	text-indent:2em;/*首行缩进两个字*/
+	letter-spacing: 1px;/*字符与字符之间的间距*/
+	word-spacing: 5px;
+	/*word-:;*/
+}
+#main .p2{
+	word-spacing: 10px;
+	text-transform: capitalize;/*首字母大写*/
+	/*
+		capitalize   首字母大写
+		uppercase    都为大写字母
+		lowercase    都为小写字母
+	*/
+}
+.div2 a{
+	text-decoration: none;
+}
+.div2 a:hover{
+	color: red;
+	text-decoration: underline;
+	/*
+		none        没有修饰
+		underline   下划线
+		overline    上划线
+		line-through添加删除线
+		blink       闪烁（高版本浏览器不支持blink属性值，了解）
+	 */
+}
