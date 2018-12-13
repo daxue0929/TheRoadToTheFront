@@ -1,0 +1,14 @@
+@charset="utf-8";
+/*CSS Document*/
+*{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;/*去掉列表符号*/}
+a,u{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-size: 16px;font-weight: 100;}
+b,strong{font-weight: 100;}
+i,em{font-style: normal;}
+
+/*上述公共样式，取消默认的标签的默认样式*/
+
+#top{width: 1000px;height: 100px;background: #ccc;margin: 0 auto;}
+#top h1{width: 150px;height: 100px;background: orange;float: left;}
+#top form{width: 247px;height: 100px;background: #cc6;float: right;}

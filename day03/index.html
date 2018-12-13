@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 600px;height: 300px;background: #d00;float: left;
+		}
+		p{
+			width: 200px;height: 60px;background: #dd0;margin-left: 20px;
+			margin-top: 20px;
+			/*margin-top:20px; 
+				当父元素和子元素都没有浮动的情况下，如果给第一个子元素添加margin-top属性，这个值会错误的加在父元素上
+				
+			默认情况下，上下两个元素之间的margin值不会叠加，会按照最大的值去设置
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p></p>
+	</div>
+</body>
+</html>
