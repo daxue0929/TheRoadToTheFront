@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除内部浮动</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.box{
+			width: 800px;
+			background: pink;
+			overflow: hidden;/*形成BFC布局，解决高度塌陷（子元素设置浮动，父元素没有高度，造成高度塌陷）*/
+		}
+		p{
+			width: 200px;
+			height: 300px;
+			background: orange;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p></p>
+	</div>
+</body>
+</html>

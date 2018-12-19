@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>原生javascript的Date对象</title>
+</head>
+<body>
+	
+
+	<script>
+		var myDate = new Date();//Date对象会把当前的日期和时间保存为其初始值	
+
+		/*
+			Date对象属性
+				constructor   返回创建此对象的Date函数的引用
+				prototype	  使你有能力向对象添加属性和方法
+		*/
+
+		console.log(myDate);  //Date()  返回当日的日期和时间
+
+		console.log(myDate.getDate()); //getDate() 从Date对象返回一个月中的某一天（0~31）
+		console.log(myDate.getDay());  //getDay()  从Date对象返回一周中的某一天（0~6）
+		console.log(myDate.getMonth());
+		console.log(myDate.getFullYear());
+		console.log("----");
+		console.log(myDate.getYear());  //有个毛病的函数，请使用FullYear代替
+		console.log(myDate.getHours());  //时
+		console.log(myDate.getMinutes());  //分
+		console.log(myDate.getSeconds()); // 秒
+
+		console.log(myDate.getMilliseconds());//毫秒
+		console.log("==================");
+		console.log(myDate.getTimezoneOffset()/60 + "小时  " + myDate.getTimezoneOffset()%60 + "分钟"); //东八区
+
+		console.log(myDate.getUTCDate());  //根据世界时从Date对象返回月中的一天（0~31）
+		console.log(myDate.getUTCDay());   //根据时间时从Date对象中返回周中的一天（0~6）
+		console.log(myDate.getUTCMonth()); //根据世界时从Date对象返回月份
+		console.log(myDate.getUTCFullYear());  
+		console.log(myDate.getUTCHours());    //根据世界时返回 Date 对象的小时 (0 ~ 23)。
+		console.log(myDate.getUTCMinutes());
+		console.log(myDate.getUTCSeconds());
+
+		console.log(myDate.getUTCMilliseconds());  //根据世界时返回Date对象的毫秒（0~999）
+		console.log(Date.parse("2015/8/17 12:35:52")); //返回1970年1月1日午夜到指定日期（字符串）的毫秒数
+		console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		console.log(Date.parse(myDate)+myDate.getMilliseconds());  //时间戳
+		console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		console.log(myDate+myDate.getMilliseconds())
+		
+	</script>
+</body>
+</html>

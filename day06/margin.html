@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0px;
+			padding: 0px;
+		}
+		div{width: 300px;height: 200px;}
+		.top{background: pink;margin-bottom: 100px;}
+		.buttom{background: orange;margin-top:50px;}
+		.box{overflow: hidden;}/*同属于一个BFC区域的两个相邻模块，margin区域会重叠
+			改变为不同属于同一个BFC区域，解决margin重叠问题。
+		*/
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="box">
+		<div class="buttom"></div>	
+	</div>
+	
+</body>
+</html>
