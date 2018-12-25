@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background: #2CA5D2;
+			
+
+		}
+		p{
+			font-size: 1.5rem;
+		}
+		@media screen and (max-width:320px ) {
+			div{
+				font-size: 12px;
+			}
+		}
+		@media screen and (min-width: 750px) {
+			div{
+				font-size: 18px;
+			}
+		}
+		@media screen and (min-width: 1024px) {
+			div{
+				font-size: 22px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	根据设备的大小的不同区改变html中的font-size的大小
+		控制rem的方法：
+			一、用媒体查询去改变html中的font-size的大小
+				确定媒体查询的范围
+			二、
+	 -->
+
+	 <div>
+	 	<p>
+	 		我是一个页面中的文本字体
+	 	</p>
+	 </div>
+</body>
+</html>

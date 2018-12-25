@@ -1,0 +1,95 @@
+<!-- 
+	CSS3渐变（gradient）可以让两个或者多个指定的颜色之间显示平稳的过度
+	以前，你必须使用图像来实现这些效果，现在通过css渐变（gradient）即可实现，此外，渐变效果的
+	元素在放大时看起来效果更好，因为渐变是由浏览器生成的。
+	background:linear-gradient(direction,color-stop1,color-stop2,...)
+
+	direction	默认为 to bottom（从上到下）
+		to bottom，to top, to left, to right
+
+		to right bottom, to right top, to left top, to left bottom
+	stop		颜色分布位置，默认均匀分布，例如有三个颜色则每个颜色占33.3%
+ -->
+
+
+
+ <!-- 
+	transition		css3de1transition允许css的属性值在一定的时间区间内，平滑的过度，这种效果可以
+	在鼠标单击获得焦点，被点击或对元素任何改变中触发，并圆滑的以动画效果来改变CSS的属性值
+
+	transition-property		检索或设置对象中的参与过度的属性
+	transition-duration		检索或设置过度的时间
+	transition-delay        动画过度的延迟
+	transition-timing-function			检索或设置对象过度的动画类型
+
+	transition all 具体的属性值 运动的时间s/ms 延迟的时间s/ms 动画类型
+
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		div{
+			width: 500px;
+			height: 300px;
+			background: red;
+			transition: width 3s;
+			/*
+				-webkit-
+				-moz-
+				-ms-
+				-o-
+			*/
+			/*background: linear-gradient(to right bottom,#08BBF6FF,#53AB6AFF);*/
+
+			/*background: -webkit-radial-gradient(10% 50%,#CB3433FF,#17E789FF,#3837C7FF)*/
+
+		}
+		div:hover{
+			width: 800px;
+		}
+		section{
+			width: 400px;
+			height: 100px;
+			background: #7F7F7FFF;
+			margin: 100px auto;
+		}
+		section li{
+			width: 99px;
+			height: 100px;
+			list-style: none;
+			text-align: center;
+			line-height: 100px;
+			float: left;
+			border-right: 1px solid red;
+			background: url(image/image.png) no-repeat left 28px;
+			transition: 1s;
+		}
+		section li:hover{
+			background: url(image/image.png) no-repeat left -80px;
+		}
+		/*section li:first-child{
+			background: url(image/image.png) no-repeat left -80px;
+		}*/
+		section li
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+	<section>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+
+	</section>
+</body>
+</html>
