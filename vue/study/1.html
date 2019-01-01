@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.html</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<div>
+		
+		dasf
+	</div>
+	<div id="app">
+		<div>
+			<input type="text" v-model="inputValue">
+			<button v-on:click="handleBtnClidk">提交</button>
+		</div>
+		<ul>
+			<li v-for="(item, index) of list">
+				{{item}} 
+				<button v-on:click="handleDelete(index)">delete</button>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		var vm = new Vue({
+			el : "#app",
+			data : {
+				inputValue : "",
+				list : []
+			},
+			methods : {
+				handleBtnClidk : function () {
+					this.list.push(this.inputValue);
+					this.inputValue = "";
+				},
+				handleDelete : function (index) {
+					this.list.splice(index, 1);
+					// alert(index)
+				}				
+			}
+		})
+	</script>
+</body>
+</html>
+

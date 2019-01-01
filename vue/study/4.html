@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<style>
+		body{
+			margin: 15px;
+		}
+		#app1{
+			height: 500px;
+			border: 3px solid #ccc;
+		}
+		.span2{
+			color: red;
+		}
+		.div2{
+			background: #48B68CFF;
+		}
+	</style>
+</head>
+<body>
+	<div id="app1">
+		{{message1}}
+		<button v-on:click="reverseMessage">逆转消息</button>
+
+		<br>
+		<span v-bind:title="message1">鼠标悬停查看状态</span>
+		<br>
+		<!-- v-if="" 控制的是直接从文档流中移除掉 -->
+		<span v-if="seen" class="span2">现在你看到我了</span>
+		<br>
+		<!-- <span v-for="todo in todos">
+			{{todo.text}}
+		</span> -->
+		<div class="div2">
+			<ol>
+				<li v-for="todo in todos">
+					{{todo.text}}
+				</li>
+			</ol>
+		</div>
+		<div class="div3">
+			{{message2}}
+			<br>
+			<input type="text" v-model="message2">
+			<!-- v-model实现表单和数据的双向绑定 -->
+		</div>
+		<div class="div4">
+			<ol>
+				<zujian 
+					v-for="item in groceryList"
+					v-bind:todo="item"
+					v-bind:key="item.id">		
+				</zujian>
+			</ol>
+		</div>
+	</div>
+	<script>
+		Vue.component("zujian",{
+			props : ['todo'],
+			template : "<li>{{todo.text}}</li>"
+		})
+		var app1 = new Vue({
+			el : "#app1",
+			data : {
+				message1 : "hello vue world !",
+				message2 : "世界",
+				seen : true,
+				todos : [
+					{text : "早上学习vue"},
+					{text : "下午学习vue"},
+					{text : "晚上学习vue"}
+				],
+				//控制台输入app.todos.push({text:"夜里也是学习"})。列表加一行
+				groceryList : [
+					{ id: 0, text: '蔬菜' },
+      				{ id: 1, text: '奶酪' },
+		            { id: 2, text: '随便其它什么人吃的东西' }
+				]
+			},
+			methods : {
+				reverseMessage: function () {
+					// this.message = this.message.split('').reverse().join('')
+					this.message1 = this.message1.split('').reverse().join('')
+				}
+			}
+		})
+	</script>
+</body>
+</html>

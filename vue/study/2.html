@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- MVVM框架 vue -->
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<!-- 页面上涉及DOM的操作性能都特别低 -->
+	<!-- 虚拟DOM，是一个真实DOM的JS对象映射 -->
+	<!-- 数据和模板结合，生成虚拟DOM
+		虚拟DAM转化为实体DOM渲染到页面上
+		当数据发生改变时，新的数据和模板相结合，会生成一个新的虚拟DOM，新旧虚拟DOM进行比对，找差异，找到差异后，根据差异，更新DOM
+		最后一步，老的虚拟DOM被清除，新的虚拟DOM取代了老的虚拟DOM
+	 -->
+	<div id="app">
+		<!-- {{test}} -->
+		<!-- <div v-bind:title="test">hello world</div> -->
+		<div v-show="show">hello Dele</div>
+		<button @click="handleToggleClick">toggle</button>
+		<hr>
+		<item>
+			today is very good
+		</item>
+	</div>
+
+	<script type="text/javascript">
+		//全局组件
+		Vue.component("item",{
+			template : "<li>hello item</li>"
+		})
+		var vm = new Vue({
+			el : "#app",
+			data : {
+				show : true
+			},
+			methods : {
+				handleToggleClick : function () {
+					this.show = !this.show;
+					console.log(this.show)
+					// body...
+
+				}
+			}
+
+		})
+
+	</script>
+</body>
+</html>
