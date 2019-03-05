@@ -48,7 +48,7 @@ class App extends Component {
 		//将被保存在内部组件得到状态中，然后再render()生命周期方法中展示出来
 	}
 	componentWillUnmount() {
-		// 组件卸载的生命周期
+		// 他会在组建销毁之前被调用，你可以利用这个生命周期方法去执行任何清理任务
 	}
 
 	// 在组件挂载中有四个生命周期方法，调用顺序如下：
@@ -59,7 +59,19 @@ class App extends Component {
 	//	结果去实现不同的行为，此外你也可以基于新的属性来设置组件的状态
 	}
 	shouldComponentUpdate(nextProps, nextState, nextContext) {
-	//	状态属性更新时，调用。
+	//	每次组件因为状态或属性更改时，调用。你将在成熟的React应用中使用它他进行性能优化，在一个更新的生命周期中，组件会根据该方法
+	// 	返回的布尔值来决定是否重新渲染。这样你就可以阻止组件的渲染生命周期，避免不必要的渲染。
+	}
+
+	componentWillUpdate(nextProps, nextState, nextContext) {
+	//	这是render()执行之前的最后一个方法，你已经拥有下一个属性和状态，他们可以在这个方法中任你处置，你可以
+	//	利用这个方法在渲染之前做最后的的准备，
+	// 	在这个生命周期中，你不能在触发setState()。
+	//	如果你想基于新的属性计算状态，你必须利用componentWillReceiveProps()
+}
+
+	componentDidUpdate(prevProps, prevState, snapshot) {
+	//	这个在render()之后立即调用，你可以把它当作操作DOM或者执行更多异步请求的机会
 	}
 
 	/*
@@ -68,8 +80,9 @@ class App extends Component {
 	componentWillReceiveProps() => shouldComponentUpdate() => componentWillUpdate() => render() =>componentDidUpdate()
 	*/
 
-
-
+	componentDidCatch(error, errorInfo) {
+	//	React 16引入，用来捕获组件的错误，向用户展示一条信息，说明应用发生了错误
+	}
 
 	render() {
 		//这个生命周期方法是必须有的，他返回作为组件输出的元素，这个方法应该是一个纯函数，因此不应该在这个方法中修改组件的状态。
@@ -115,7 +128,7 @@ export default App;
 
 class Table extends Component {
 	render() {
-		const {list, pattern, onDismiss} = this.props;
+		const {list, _, onDismiss} = this.props;
 		return (
 			<div>
 				{list.map(item =>
