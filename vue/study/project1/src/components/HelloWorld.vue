@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h3>{{ this.$route.query }}</h3>
 
 		<!-- 复选框--和文档有区别,是全选的样子 -->
 		<div>
@@ -56,13 +56,12 @@
 		<br>
 		<br>
 		<button @click="fun">子组件传值给父组件</button>
-
-
   </div>
 </template>
 
 <script>
-export default {
+
+  export default {
   name: 'HelloWorld',
 	data: function () {
   	return {

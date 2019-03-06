@@ -1,38 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld @my-event="func" :msg="message"/>
-  </div>
+	<div id="app">
+		<!--<img alt="Vue logo" src="./assets/logo.png">-->
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-	data: function() {
-  	return{
-			message: 'welcome to Vue world'
-  	}
-	},
-	methods: {
-		func: function (m) {
-			this.message = m;
-		}
-	},
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		name: 'app'
+	}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	#app {
+		font-family: 'Avenir', Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		color: #2c3e50;
+		margin-top: 20px;
+	}
 </style>
