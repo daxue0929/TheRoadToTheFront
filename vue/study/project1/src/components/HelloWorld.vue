@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h3>{{ this.$route.query }}</h3>
+    <h3>{{ msg }}</h3>
 
 		<!-- 复选框--和文档有区别,是全选的样子 -->
 		<div>
