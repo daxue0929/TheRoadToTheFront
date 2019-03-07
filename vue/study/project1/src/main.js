@@ -4,9 +4,13 @@ import Vuex from 'vuex'
 import store from './store/store'
 import App from './App.vue'
 import { routes } from './routes'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 const router = new VueRouter({

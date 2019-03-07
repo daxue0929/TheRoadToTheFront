@@ -29,7 +29,7 @@
   import { GET_EMP_INFO } from '@/store/mutation-types'
 	import RowSpace from '@/components/RowSpace'
   export default {
-    name: "Index",
+    name: "Test",
 		computed: {
       person: function () {
 				return this.$store.state.person

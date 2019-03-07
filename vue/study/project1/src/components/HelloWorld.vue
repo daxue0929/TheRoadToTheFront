@@ -14,9 +14,6 @@
 			<span>Checked names: {{ checkedNames }}</span>
 		</div>
 
-		<br>
-		<br>
-
 		<!-- 单选框 -->
 		<div>
 			<input type="radio" id="one" value="One" v-model="picked">
