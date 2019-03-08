@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 import store from './store/store'
 import App from './App.vue'
 import { routes } from './routes'
+import './assets/reset.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
