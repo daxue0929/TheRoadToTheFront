@@ -55,32 +55,37 @@
 </template>
 
 <script>
+
   import Header from "../../components/Header";
+
   export default {
     name: "Index",
-		data() {
+    data() {
       return {
-        companyTitle:"示例***	公司",
+        companyTitle: "示例***	公司",
         activeNames: []
-			}
-		},
-		methods: {
-      handleAsideChange(val) {
-        console.log(val);
       }
-		},
+    },
+    methods: {
+
+      handleAsideChange(val) {
+        window.this.console.log(val);
+      }
+    },
     components: {Header}
+
   }
 </script>
 
 <style lang="scss" scoped>
-		.el-col {
-			min-height: 550px;
-			background: #ACC8CB;
-			.el-collapse-item__header {
-				background: #EBEEF5;
-			}
+	.el-col {
+		min-height: 550px;
+		background: #ACC8CB;
+
+		.el-collapse-item__header {
+			background: #EBEEF5;
 		}
+	}
 </style>
 
 
