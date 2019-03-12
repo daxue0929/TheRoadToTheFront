@@ -9,7 +9,5 @@
     name: "TeacherInfo"
   }
 </script>
-
 <style scoped>
-
 </style>

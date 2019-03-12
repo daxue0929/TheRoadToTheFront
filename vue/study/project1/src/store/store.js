@@ -60,6 +60,8 @@ const store = new Vuex.Store({
         value: input.value
       })
     }
+
+
   }
 })
 
