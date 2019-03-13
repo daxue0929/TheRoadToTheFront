@@ -1,1 +1,1 @@
-export const SHOW_ME = 'showMe'
+export const SHOW_ME = 'SHOW_ME'
