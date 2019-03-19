@@ -12,7 +12,7 @@ module.exports = {
     es6: true
   },
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
+  extends: 'eslint:recommended',
   // required to lint *.vue files
   plugins: [
     'html'
@@ -30,13 +30,13 @@ module.exports = {
     App: true,
     Page: true,
     wx: true,
-    swan: true,
-    tt: true,
-    my: true,
+    swan: false,
+    tt: false,
+    my: false,
     getApp: true,
     getPage: true,
     requirePlugin: true,
     mpvue: true,
-    mpvuePlatform: true
+    mpvuePlatform: false
   }
 }

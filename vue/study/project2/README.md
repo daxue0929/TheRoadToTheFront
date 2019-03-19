@@ -1,29 +1,26 @@
-# project2
+## project2
 
-## Project setup
+### 初始化环境，安装依赖包
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### 启动服务
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### 编译生成发布的代码包
 ```
 npm run build
 ```
 
-### Run your tests
+#### 测试
 ```
 npm run test
 ```
 
-### Lints and fixes files
+### Lints and fixes files --不知道干嘛的
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

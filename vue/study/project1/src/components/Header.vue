@@ -9,30 +9,34 @@
 <script>
   export default {
     name: "Header",
-		data() {
+
+    data() {
       return {
         companyTitle: "无锡乐乎科技集团"
-			}
-		},
-		props: {
+      }
+    },
+    props: {
       title: {
         type: String,
-				default: ""
-			}
-		}
+        default: ""
+      }
+    }
   }
 </script>
 
 <style lang="scss" scoped>
 	.el-col {
-		height: 70px;
-		background: #ACC8CB;
+		height: 100px;
+		/*background: #ACC8CB;*/
+		background-image: url("../assets/header-bg.jpg");
+
 		p {
 			font-size: 20px;
 			font-weight: 700;
 			color: #000;
 			/*line-height: 100%;*/
-			margin-top: 20px;
+			margin-top: 40px;
+			text-align: center;
 		}
 	}
 </style>

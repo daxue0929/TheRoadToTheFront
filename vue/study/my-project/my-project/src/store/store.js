@@ -1,5 +1,3 @@
-// https://vuex.vuejs.org/zh-cn/intro.html
-// make sure to call Vue.use(Vuex) if using a module system
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -7,28 +5,19 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-
-  },
-  getters: {
-
+    number: 12
   },
   mutations: {
-
+    addNumber: (state) => {
+      const obj = state
+      obj.number += 1
+    }
   },
   actions: {
-
-  },
-  modules: {
-    a: ModuleA
+    addNumber: ({commit}) => {
+      commit('addNumber')
+    }
   }
 })
-
-ModuleA = {
-  state: {
-
-  },
-  mutations: {},
-  actions: {}
-}
 
 export default store

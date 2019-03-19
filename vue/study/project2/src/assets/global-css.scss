@@ -1,0 +1,9 @@
+$basic-border: 1px solid #eee !default;
+
+@mixin rounded-corners {
+  border-radius: 5px;
+}
+
+// 被导入的局部的scss以下划线开头，引用时可以省略这个下划线，自动解析。
+
+

@@ -1,14 +1,35 @@
 <template>
-	<div>
-		<p>这是Demo1</p>
-		<button @click="showMe">方法</button>
-		{{this.$store.state}}
+	<div id="demo1">
+		<div class="header">
+			<p class="title">这是Demo1</p>
+		</div>
+		<div class="mid-content">
+			<div class="first">
+				<p>
+					<button @click="showMe">方法</button>
+				</p>
+				<p>{{this.$store.state}}</p>
+				<br>
+				<p>{{this.$store.state.Login.message}}</p>
+			</div>
+			<br>
+			<div class="second">
+				<p>
+					<button @click="showMe">方法2</button>
+				</p>
+				<p>{{this.$store.state}}</p>
+			</div>
+		</div>
+
+
 	</div>
 
 </template>
 
 <script>
   import { SHOW_ME } from "../store/mutation-types";
+  import './style.scss'
+
   export default {
     name: "Demo1",
     data: function () {
@@ -20,19 +41,25 @@
       }
     },
     methods: {
-			showMe() {
+      showMe: () => {
         window.console.log(this.$store.state.Login);
         // this.$store.state.Login.qq.id
-				let a = this.$store.dispatch({
-					type: SHOW_ME
-				})
-
+        this.$store.dispatch({
+          type: SHOW_ME
+        })
       }
     },
     components: {}
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+	//html {font-size: 10px}
+	@import "../assets/global-css";
 
+	.mid-content {
+		margin-top: 1rem;
+		border: $basic-border;
+		@include rounded-corners;
+	}
 </style>

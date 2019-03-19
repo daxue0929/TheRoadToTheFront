@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 export const routes = [
   {path: '/', component: App},
-  {path: '/demo1', component: Demo1}
+  {path: '/demo1', component: Demo1, alias: '简单的接收点击请求一个json数据显示，测试axios'}
 ]
 
 const router = new VueRouter({

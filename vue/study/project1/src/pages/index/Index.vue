@@ -76,7 +76,7 @@
       empBasicInfo(){
         // 员工详细信息页面
         this.$router.push({
-          path: '/index/EmpBasicInfo'
+          path: '/index/EmpBasicInfo/'
         })
 			},
       inTraining() {
@@ -135,7 +135,7 @@
 <style lang="scss">
 	#aside {
 		.el-col {
-			min-height: 550px;
+			min-height: 700px;
 			background: #ACC8CB;
 			.aside-right{
 				background-color: #C7CBC5;

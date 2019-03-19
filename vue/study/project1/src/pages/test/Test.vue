@@ -17,7 +17,7 @@
 		<RowSpace w="170"></RowSpace>
 		<br>
 
-		<button @click="handleGetEmpInfo">获取emp员工信息</button>
+		<button @click="handleGetEmpInfo">测试获取emp员工信息</button>
 		<span v-if="this.$store.state.objEmp">{{this.$store.state.objEmp.empBirth}}</span>
 
 	</div>
@@ -28,6 +28,7 @@
 	import { SHOW_PEOPLE } from '@/store/mutation-types'
   import { GET_EMP_INFO } from '@/store/mutation-types'
 	import RowSpace from '@/components/RowSpace'
+  import { GET_EMP_ALL_INFO, GET_EMP_BYID } from "../../store/mutation-types";
   export default {
     name: "Test",
 		computed: {
@@ -38,14 +39,15 @@
 		props:{
 
 		},
-		mounted: function() {
-      this.handleGetEmpInfo();
-		},
+		// mounted: function() {
+    //   this.handleGetEmpInfo();
+		// },
 		methods: {
       handleGetEmpInfo: function() {
         this.$store.dispatch({
-					type: GET_EMP_INFO
-				})
+          type: GET_EMP_BYID,
+          value:1
+        })
 			},
       handleBecome: function () {
 				// this.$store.commit({

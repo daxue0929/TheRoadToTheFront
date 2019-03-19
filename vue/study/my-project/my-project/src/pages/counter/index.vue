@@ -1,29 +1,26 @@
 <template>
   <div class="counter-warp">
-    <p>Vuex counter：{{ count }}</p>
+		{{ number }}
     <p>
       <button @click="increment">+</button>
-      <button @click="decrement">-</button>
+      <!--<button @click="decrement">-</button>-->
     </p>
   </div>
 </template>
 
 <script>
 // Use Vuex
-import store from './store'
+import store from '../../store/store'
 
 export default {
   computed: {
-    count () {
-      return store.state.count
+    number () {
+      return store.state.number
     }
   },
   methods: {
-    increment () {
-      store.commit('increment')
-    },
-    decrement () {
-      store.commit('decrement')
+    increment: function () {
+      store.commit('addNumber')
     }
   }
 }

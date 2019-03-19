@@ -11,8 +11,12 @@ const getters = {
 
 }
 
-let actions = {}
-let mutations = {}
+let actions = {
+
+}
+let mutations = {
+
+}
 
 export default {
   state,
