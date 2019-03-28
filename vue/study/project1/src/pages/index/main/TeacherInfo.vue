@@ -1,29 +1,90 @@
 <template>
 	<div>
-		<div class="teacher-item">
-			教员姓名教员执教时间教员签名学历
+		<WelcomeTitle name="教员信息"></WelcomeTitle>
+		<div class="teacher-item" v-for="teacher in t">
+			<div><span class="label-title">教员姓名：</span>{{teacher.tName}}</div>
+			<div><span class="label-title">执教时间：</span>{{teacher.tStartTime}}</div>
+			<div><span class="label-title">学历层次：</span>{{teacher.tEducation}}</div>
+			<div><span class="label-title">勉励签名：</span>{{teacher.autograph}}</div>
 		</div>
 
 	</div>
 </template>
-
 <script>
+  import WelcomeTitle from "../../../components/WelcomeTitle";
   export default {
-    name: "TeacherInfo"
+    name: "TeacherInfo",
+    data() {
+      return {
+        t: [
+          {
+            tName: '王小二',
+            tStartTime: '2018-5-4',
+            tEducation: '硕士',
+            autograph: '每天进步一点点，蓦然回首，已经前进了一大步'
+
+          }
+          , {
+            tName: '王光明',
+            tStartTime: '2012-11-4',
+            tEducation: '硕士',
+            autograph: '生命在于运动，运动的生命是健康的保证。开心'
+          },
+          {
+            tName: '王光明',
+            tStartTime: '2012-11-4',
+            tEducation: '硕士',
+            autograph: '声明在于运动，运动的生命是健康的保证。开心'
+          },
+          {
+            tName: '王光明',
+            tStartTime: '2012-11-4',
+            tEducation: '硕士',
+            autograph: '生命在于运动，运动的生命是健康的保证。开心'
+          },
+          {
+            tName: '李晓明',
+            tStartTime: '2001-11-4',
+            tEducation: '博士',
+            autograph: '有所爱，有所期待。每一天都是美好的日子。。'
+          },
+          {
+            tName: '张大明',
+            tStartTime: '2008-10-2',
+            tEducation: '博士',
+            autograph: '今天是个好日历，明天也是好的呀。每天如此。'
+          },
+        ]
+      }
+    },
+    components: {WelcomeTitle}
   }
 </script>
 <style scoped>
 	.teacher-item{
 		background: #FEFEFF;
-		height: 50px;
-		width: 100%;
-		padding-top: 5px;
-		padding-left: 3px;
-		border-bottom: 2px solid #CB979D;
-		box-shadow: 0 0 5px #CB979D inset;
+		height: 2.5rem;
+		/*width: 100%;*/
+		margin-bottom: 1rem;
+		padding-top: .5rem;
+		padding-left: .3rem;
+		border-bottom: .2rem solid #CB979D;
+		box-shadow: 0 0 .5rem #CB979D inset;
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: space-around;
 
+	}
+	.teacher-item>div {
+		/*padding: 1rem;*/
+		font-size: 1.4rem;
+		/*background: #616CCB;*/
+
+		line-height: 2rem;
+		position: relative;
+		top: 0.25rem;
+	}
+	.label-title{
+		color: #838EB5;
 	}
 </style>

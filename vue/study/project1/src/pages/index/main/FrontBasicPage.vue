@@ -12,6 +12,7 @@
 				<div>登录时间：{{loginTime}}</div>
 			</div>
 		</div>
+
 		<div class="section">
 			<div class="section-title">主页详情信息</div>
 			<div class="section-mid">

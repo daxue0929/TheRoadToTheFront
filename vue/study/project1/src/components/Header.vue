@@ -1,8 +1,7 @@
 <template>
 	<el-row >
 		<el-col class="header" :span="20" :offset="2">
-			<div>
-
+			<div @click="backHome">
 				<p>{{title}}员工培训管理系统</p>
 			</div>
 		</el-col>
@@ -23,7 +22,14 @@
         type: String,
         default: ""
       }
-    }
+    },
+		methods: {
+      backHome() {
+        this.$router.push({
+					path: '/index/FrontBasicPage'
+				})
+			}
+		}
   }
 </script>
 
@@ -39,6 +45,10 @@
 			color: #000;
 			line-height: 100px;
 			text-align: center;
+		}
+		p:hover{
+			cursor: pointer;
+			color: red;
 		}
 	}
 </style>

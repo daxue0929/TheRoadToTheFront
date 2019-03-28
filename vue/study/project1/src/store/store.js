@@ -11,6 +11,7 @@ const store = new Vuex.Store({
   state: {
     empAllInfoTableData: [],
     companyTitle:'微软科技',
+    empName: '王小二',
     person: {
       uuid: '001',
       age: 18,
@@ -21,7 +22,7 @@ const store = new Vuex.Store({
       iphone: '17344615861'
     },
     empId:'',
-    empName: '',
+
     objEmp: {},
     todo: [
       {id: 1, text: '...', done: true},

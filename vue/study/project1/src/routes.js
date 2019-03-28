@@ -3,7 +3,6 @@ import Test from "./pages/test/Test";
 import Login from "./pages/login/Login";
 import Index from "./pages/index/Index";
 import UpdateEmpBasicInfo from "./pages/index/main/UpdateEmpBasicInfo";
-import CompletedCourse from "./pages/index/main/CompletedCourse";
 import CourseEvaluateInfo from "./pages/index/main/CourseEvaluateInfo";
 import CourseInfo from "./pages/index/main/CourseInfo";
 import InTrainingInfo from "./pages/index/main/InTrainingInfo";
@@ -34,7 +33,6 @@ export const routes = [
     children: [
       {path:'FrontBasicPage', component: FrontBasicPage},
       {path: 'UpdateEmpBasicInfo', component: UpdateEmpBasicInfo},
-      {path: 'CompletedCourse', component: CompletedCourse},
       {path: 'CourseEvaluateInfo', component: CourseEvaluateInfo},
       {path: 'CourseInfo', component: CourseInfo},
       {path: 'InTrainingInfo', component: InTrainingInfo},

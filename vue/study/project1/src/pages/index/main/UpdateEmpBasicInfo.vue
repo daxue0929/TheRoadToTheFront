@@ -111,6 +111,7 @@
     methods: {
       handleUpdate() {
 				window.console.log(this.emp)
+				alert("更新成功")
 			}
     },
 		mounted() {

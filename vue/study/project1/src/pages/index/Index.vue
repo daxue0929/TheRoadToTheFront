@@ -15,9 +15,8 @@
 								<p class="aside-right-item" @click="empBasicInfo">去往完善信息</p>
 							</el-collapse-item>
 							<el-collapse-item title="培训中心" name="培训中心">
-								<p class="aside-right-item" @click="inTraining">培训进行时</p>
-								<p class="aside-right-item" @click="completedCourse">培训已完成</p>
-								<p class="aside-right-item" @click="trainingResults">培训成绩表</p>
+								<p class="aside-right-item" @click="inTraining">培训状态</p>
+								<p class="aside-right-item" @click="trainingResults">培训成绩</p>
 							</el-collapse-item>
 							<el-collapse-item title="课程中心" name="课程中心">
 								<p class="aside-right-item" @click="teacherInfo">教员信息</p>
@@ -44,7 +43,6 @@
 							<!--<p>员工报名之后,可以查看当前班级里有哪些同学.已毕业的有哪些前辈.</p>-->
 							<!--<p>员工可以在线申请请假,由企业管理用户批准后方可不参加课程培训</p>-->
 						<!--</div>-->
-						<!--<div class=""></div>-->
 					</el-col>
 				</el-row>
 			</el-col>
@@ -76,12 +74,6 @@
         //正在的培训的课程信息
         this.$router.push({
           path: '/index/InTrainingInfo'
-        })
-			},
-      completedCourse() {
-        //完成的培训列表
-        this.$router.push({
-          path: '/index/CompletedCourse'
         })
 			},
       trainingResults() {
