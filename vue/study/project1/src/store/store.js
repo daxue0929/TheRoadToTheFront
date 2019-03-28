@@ -2,16 +2,15 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import actions from './actions'
-import { GET_EMP_BYID, SET_EMP_ID, SHOW_PEOPLE } from './mutation-types'
+import { GET_EMP_BYID, NEW_EMP_REGIST, SET_EMP_ID, SHOW_PEOPLE } from './mutation-types'
 import { GET_EMP_ALL_INFO } from './mutation-types'
-
 
 Vue.use(Vuex)
 
-
-
 const store = new Vuex.Store({
   state: {
+    empAllInfoTableData: [],
+    companyTitle:'微软科技',
     person: {
       uuid: '001',
       age: 18,
@@ -22,11 +21,13 @@ const store = new Vuex.Store({
       iphone: '17344615861'
     },
     empId:'',
+    empName: '',
     objEmp: {},
     todo: [
       {id: 1, text: '...', done: true},
       {id: 2, text: '...', done: false}
-    ]
+    ],
+    test:0
   },
   getters: {
     doneTodo: state => {
@@ -37,14 +38,20 @@ const store = new Vuex.Store({
     [SHOW_PEOPLE](state, input) {
       state.person.name = input.value
     },
-    [GET_EMP_ALL_INFO](state, input) {
-
+    [GET_EMP_ALL_INFO](state,input) {
+      state.empAllInfoTableData = input.value
     },
     [GET_EMP_BYID](state, input){
       state.objEmp = input.value
     },
     [SET_EMP_ID](state, input){
       state.empId = input.value
+    },
+
+    //注册和新增emp mutation
+    [NEW_EMP_REGIST](state,input) {
+      state.test = 2
+      window.console.log(input.value)
     }
   },
   actions

@@ -12,8 +12,7 @@
 						<el-collapse v-model="activeNames" @change="handleAsideChange">
 							<el-collapse-item title="个人中心" name="个人中心">
 								<!--<router-link to="/index/EmpBasicInfo">跳转</router-link>-->
-								<p class="aside-right-item" @click="empBasicInfo">员工基本信息</p>
-								<p class="aside-right-item" @click="goUpdate">更新信息</p>
+								<p class="aside-right-item" @click="empBasicInfo">去往完善信息</p>
 							</el-collapse-item>
 							<el-collapse-item title="培训中心" name="培训中心">
 								<p class="aside-right-item" @click="inTraining">培训进行时</p>
@@ -57,26 +56,20 @@
 <script>
 
   import Header from "../../components/Header";
-
+	import './base.scss'
   export default {
     name: "Index",
     data() {
       return {
-        companyTitle: "示例***	公司",
+        companyTitle: this.$store.state.companyTitle,
         activeNames: []
       }
     },
     methods: {
-      goUpdate(){
-        //跳转到更新信息页面
-				this.$router.push({
-					path: '/index/update'
-				})
-			},
       empBasicInfo(){
         // 员工详细信息页面
         this.$router.push({
-          path: '/index/EmpBasicInfo/'
+          path: '/index/UpdateEmpBasicInfo/'
         })
 			},
       inTraining() {
@@ -128,39 +121,12 @@
       }
     },
     components: {Header}
-
   }
 </script>
-
 <style lang="scss">
-	#aside {
-		.el-col {
-			min-height: 700px;
-			background: #ACC8CB;
-			.aside-right{
-				background-color: #C7CBC5;
-				.aside-right-item{
-					margin-top: 10px;
-					font-size: 17px;
-					color: #000;
-				}
-				.aside-right-item:hover{
-					color: red;
-					text-decoration: underline;
-				}
-				.el-collapse-item__header {
-					background-color: #C7CBC5;
-				}
-			}
-		}
-	}
-
-	.context-left{
-		.context-left-header{
-			height: 50px;
-			background: #B4CBB0;
-		}
-	}
+.aside-right-item{
+	text-decoration: underline #000;
+}
 </style>
 
 

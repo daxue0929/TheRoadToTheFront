@@ -1,15 +1,18 @@
 <template>
-	<el-row>
-		<el-col :span="20" :offset="2">
-			<p>{{title}}员工培训管理系统</p>
+	<el-row >
+		<el-col class="header" :span="20" :offset="2">
+			<div>
+
+				<p>{{title}}员工培训管理系统</p>
+			</div>
 		</el-col>
+
 	</el-row>
 </template>
 
 <script>
   export default {
     name: "Header",
-
     data() {
       return {
         companyTitle: "无锡乐乎科技集团"
@@ -25,17 +28,16 @@
 </script>
 
 <style lang="scss" scoped>
-	.el-col {
+	.header{
 		height: 100px;
-		/*background: #ACC8CB;*/
 		background-image: url("../assets/header-bg.jpg");
-
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 		p {
 			font-size: 20px;
 			font-weight: 700;
 			color: #000;
-			/*line-height: 100%;*/
-			margin-top: 40px;
+			line-height: 100px;
 			text-align: center;
 		}
 	}

@@ -21,6 +21,9 @@
 			</div>
 		</div>
 
+		<router-link :to="{path:'/demo2/12'}">传参</router-link>
+		<br>
+		<router-link :to="{name:'demo2',params:{color: 22}}">传参2</router-link>
 
 	</div>
 

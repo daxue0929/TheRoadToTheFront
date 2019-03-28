@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>检测canvas上是否有半透明的点</title>
+	<style type="text/css">
+		#canvas{
+			background: #F3F5DC;
+		}
+	</style>
+</head>
+<body>
+<canvas id="canvas" title="这是一块canvas"></canvas>
+<script>
+
+	HTMLCanvasElement.prototype.isSomeAlphaPixel = function () {
+		let context = this.getContext("2d");
+		//获取图像像素信息
+		let imageData = context.getImageData(0, 0, this.width, this.height).data;
+		//检测有没有透明数据
+		
+		let isAlphaBackground = false;
+		
+		for (let index = 3; index <= imageData.length; index += 4){
+		  if(imageData[index] != 255) {
+		    isAlphaBackground = true;
+				break;
+			}
+		}
+		return isAlphaBackground;
+  }
+
+  let canvas = document.getElementById("canvas");
+
+	//用于设置canvas的宽高
+	canvas.height = 300;
+	canvas.width = 500;
+
+	let ctx = canvas.getContext("2d");
+
+	ctx.arc(100, 100, 20, Math.PI, Math.PI * 1.5, false);
+
+	ctx.stroke();
+
+  console.log(canvas.isSomeAlphaPixel());
+
+</script>
+
+</body>
+</html>

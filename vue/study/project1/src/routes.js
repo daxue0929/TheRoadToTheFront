@@ -2,8 +2,7 @@ import HelloWorld from "./components/HelloWorld";
 import Test from "./pages/test/Test";
 import Login from "./pages/login/Login";
 import Index from "./pages/index/Index";
-import UpdateEmpInfo from "./pages/index/main/UpdateEmpInfo";
-import EmpBasicInfo from "./pages/index/main/EmpBasicInfo";
+import UpdateEmpBasicInfo from "./pages/index/main/UpdateEmpBasicInfo";
 import CompletedCourse from "./pages/index/main/CompletedCourse";
 import CourseEvaluateInfo from "./pages/index/main/CourseEvaluateInfo";
 import CourseInfo from "./pages/index/main/CourseInfo";
@@ -12,8 +11,18 @@ import TeacherEvaluateInfo from "./pages/index/main/TeacherEvaluateInfo";
 import TeacherInfo from "./pages/index/main/TeacherInfo";
 import TrainingResults from "./pages/index/main/TrainingResults";
 import Regist from "./pages/regist/Regist";
-import EmployeeCenter from "./pages/index/admin/EmployeeCenter";
 import Admin from "./pages/index/Admin";
+import CourseAllInfo from "./pages/index/admin/CourseAllInfo";
+import EmpBasicAllInfo from "./pages/index/admin/EmpBasicAllInfo";
+import TeacherCourseInfo from "./pages/index/admin/TeacherCourseInfo";
+import TeacherAllInfo from "./pages/index/admin/TeacherAllInfo";
+import EvaluateTeacherInfo from "./pages/index/admin/EvaluateTeacherInfo";
+import EvaluateEmpInfo from "./pages/index/admin/EvaluateEmpInfo";
+import EvaluateCourseInfo from "./pages/index/admin/EvaluateCourseInfo";
+import EvaluateAllInfo from "./pages/index/admin/EvaluateAllInfo";
+import EmpCourseInfo from "./pages/index/admin/EmpCourseInfo";
+import AddEmpItem from "./pages/index/admin/AddEmpItem";
+import FrontBasicPage from "./pages/index/main/FrontBasicPage";
 
 export const routes = [
   {path: '/test', component: HelloWorld},
@@ -23,8 +32,8 @@ export const routes = [
   {
     path: '/index', component: Index,
     children: [
-      {path: 'update', component: UpdateEmpInfo},
-      {path: 'EmpBasicInfo', component: EmpBasicInfo},
+      {path:'FrontBasicPage', component: FrontBasicPage},
+      {path: 'UpdateEmpBasicInfo', component: UpdateEmpBasicInfo},
       {path: 'CompletedCourse', component: CompletedCourse},
       {path: 'CourseEvaluateInfo', component: CourseEvaluateInfo},
       {path: 'CourseInfo', component: CourseInfo},
@@ -37,7 +46,16 @@ export const routes = [
   {
     path: '/admin', component: Admin,
     children: [
-      {path:'EmployeeCenter', component: EmployeeCenter}
+      {path:'CourseAllInfo', component: CourseAllInfo},
+      {path:'EmpBasicAllInfo', component:EmpBasicAllInfo},
+      {path:'EmpCourseInfo', component:EmpCourseInfo},
+      {path:'EvaluateAllInfo', component:EvaluateAllInfo},
+      {path:'EvaluateCourseInfo', component:EvaluateCourseInfo},
+      {path:'EvaluateEmpInfo', component:EvaluateEmpInfo},
+      {path:'EvaluateTeacherInfo', component:EvaluateTeacherInfo},
+      {path:'TeacherAllInfo',component:TeacherAllInfo},
+      {path:'TeacherCourseInfo',component:TeacherCourseInfo},
+      {path:'AddEmpItem', component:AddEmpItem}
     ]
   }
 ]

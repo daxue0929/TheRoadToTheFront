@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			width: 100%;
+		}
+		canvas{
+			margin:auto auto;
+		}
+	</style>
+	<script src="node_modules/three/build/three.js"></script>
+
+</head>
+<body>
+<script>
+  //场景
+  let scene = new THREE.Scene();
+
+  //透视相机
+  let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight);
+
+  //渲染器
+  let renderer = new THREE.WebGLRenderer();
+
+  //设置渲染器的大小为浏览器的宽度,也就是内容区的宽度
+  renderer.setSize(200,200);
+
+  document.body.appendChild(renderer.domElement);
+
+
+</script>
+
+</body>
+</html>

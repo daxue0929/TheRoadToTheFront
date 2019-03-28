@@ -1,13 +1,13 @@
 <template>
 	<div class="login">
-		<Header title="请登陆所在公司"></Header>
+		<Header title="请登录"></Header>
 		<el-row :gutter="20">
 			<!--<el-col :span="5">-->
 				<!--<div class="bg-purple">-->
 					<!--占位-->
 				<!--</div>-->
 			<!--</el-col>-->
-			<el-col :span="14" :offset="5">
+			<el-col :span="20" :offset="2">
 				<div class="bg-purple mid">
 					<el-row>
 						<el-col :span="12" :offset="6">
@@ -41,6 +41,11 @@
 </template>
 
 <script>
+  /**
+	 * /login
+	 *
+   */
+
   import Header from "../../components/Header";
   import { SET_EMP_ID } from "../../store/mutation-types";
   export default {
@@ -82,7 +87,10 @@
 
 <style lang="scss" scoped>
 	.bg-purple {
-		background: #d3dce6;
+		/*background: #d3dce6;*/
+		background-image: url("../../assets/body-bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 	}
 	.mid {
 		height: 500px;

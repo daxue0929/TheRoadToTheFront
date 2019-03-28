@@ -1,0 +1,25 @@
+#aside {
+  .el-col {
+    min-height: 700px;
+    //background: #ACC8CB;
+    background-image: url("../../assets/home-bg.jpg");
+    background-repeat: no-repeat;
+    .aside-right{
+      //background-color: #C7CBC5;
+      .aside-right-item{
+        margin-top: 10px;
+        font-size: 17px;
+        color: #000;
+      }
+      .aside-right-item:hover{
+        color: red;
+        text-decoration: underline;
+      }
+      .el-collapse-item__header {
+        background-color: rgba(255,255,255,0);
+      }
+    }
+  }
+}
+
+
