@@ -25,7 +25,7 @@
     data() {
       return {
         emp: {
-          empName:'张三',
+          tName:'张三',
           empCompanyName:'微软科技'
         },
         inTrainingTnfo: [

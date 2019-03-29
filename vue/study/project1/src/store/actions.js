@@ -26,7 +26,7 @@ const actions = {
   [GET_EMP_BYID]({commit}, input) {
     axios.get(baseURL + 'EmpQueryByIdServlet', {
       params: {
-        empId: input.value
+        courseId: input.value
       }
     }).then(function (res) {
       commit({

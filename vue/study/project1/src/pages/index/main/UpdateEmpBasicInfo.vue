@@ -52,9 +52,9 @@
 		<!--</el-table>-->
 		<form class="emp-form">
 			<span class="label">员工工号</span>
-			<input type="text" :value="emp.empId"><br>
+			<input type="text" :value="emp.courseId"><br>
 				<span class="label">员工姓名</span>
-			<input type="text" :value="emp.empName"><br>
+			<input type="text" :value="emp.tName"><br>
 			<span class="label">公司名称</span>
 			<input type="text" :value="emp.empCompanyName"><br>
 			<span class="label">性别</span>
@@ -91,8 +91,8 @@
     data() {
       return {
         emp: {
-          empName:'王二狗',
-          empId:'001',
+          tName:'王二狗',
+          courseId:'001',
           empCompanyName:'公司A',
           empSex:'男',
           empNativePlace:'北京市朝阳区一号',
@@ -117,7 +117,7 @@
 		mounted() {
 			this.$store.dispatch({
 				type: GET_EMP_BYID,
-				value: this.$store.state.empId
+				value: this.$store.state.courseId
 			})
     }
   }

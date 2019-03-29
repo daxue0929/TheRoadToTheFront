@@ -7,7 +7,7 @@
 			</div>
 			<div class="header-introduction">
 				<!-- 一个小简介 -->
-				<div>登录人员：{{emp.empName}}</div>
+				<div>登录人员：{{emp.tName}}</div>
 				<div>所在公司：{{emp.empCompanyName}}</div>
 				<div>登录时间：{{loginTime}}</div>
 			</div>
@@ -17,8 +17,8 @@
 			<div class="section-title">主页详情信息</div>
 			<div class="section-mid">
 				<div class="section-mid-col">
-					<span>员工编号：{{emp.empId}}</span>
-					<span>员工姓名：{{emp.empName}}</span>
+					<span>员工编号：{{emp.courseId}}</span>
+					<span>员工姓名：{{emp.tName}}</span>
 				</div>
 				<div class="section-mid-col">
 					<span>员工国籍：{{emp.empNationality}}</span>
@@ -63,9 +63,9 @@
 		data() {
       return {
 				emp: {
-				  empName:'张三',
+				  tName:'张三',
           empCompanyName:'微软科技',
-          empId:'001',
+          courseId:'001',
 
           empSex:'男',
           empNativePlace:'华夏国北京市朝阳区一号街道1101号',

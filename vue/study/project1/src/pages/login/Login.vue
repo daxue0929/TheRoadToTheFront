@@ -13,7 +13,7 @@
 						<el-col :span="12" :offset="6">
 							<el-form :label-position="labelPosition" label-width="100px" :model="form">
 								<el-form-item label="员工工号">
-									<el-input v-model="form.empId"></el-input>
+									<el-input v-model="form.courseId"></el-input>
 								</el-form-item>
 								<el-form-item label="员工密码">
 									<el-input v-model="form.passWord"></el-input>
@@ -55,7 +55,7 @@
       return {
         labelPosition: 'left',
         form: {
-          empId: '',
+          courseId: '',
           passWord: '',
           company: ''
         }
@@ -71,12 +71,12 @@
 				})
 				this.$store.commit({
 					type: SET_EMP_ID,
-					value: this.form.empId
+					value: this.form.courseId
 				})
       },
       resetForm() {
         this.form = {
-          empId: '',
+          courseId: '',
           passWord: '',
           company: ''
 				}

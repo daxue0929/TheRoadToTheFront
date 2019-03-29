@@ -9,9 +9,9 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    empAllInfoTableData: [],
+    courseAllData: [],
     companyTitle:'微软科技',
-    empName: '王小二',
+    tName: '王小二',
     person: {
       uuid: '001',
       age: 18,
@@ -21,7 +21,7 @@ const store = new Vuex.Store({
       hobby: '音乐',
       iphone: '17344615861'
     },
-    empId:'',
+    courseId:'',
 
     objEmp: {},
     todo: [
