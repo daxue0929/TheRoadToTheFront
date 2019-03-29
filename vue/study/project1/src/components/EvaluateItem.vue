@@ -17,7 +17,7 @@
     name: "EvaluateItem",
 		props: {
       courseName:'',
-			teacherName:'',
+			courseScore:'',
 			value:'',
 			evaluatePeople:'',
 			evaluateTime:''

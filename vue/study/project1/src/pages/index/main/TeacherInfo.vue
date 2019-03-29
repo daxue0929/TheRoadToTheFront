@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<WelcomeTitle name="教员信息"></WelcomeTitle>
-		<div class="teacher-item" v-for="teacher in t">
+		<div class="course-item" v-for="teacher in t">
 			<div><span class="label-title">教员姓名：</span>{{teacher.tName}}</div>
 			<div><span class="label-title">执教时间：</span>{{teacher.tStartTime}}</div>
 			<div><span class="label-title">学历层次：</span>{{teacher.tEducation}}</div>
@@ -61,7 +61,7 @@
   }
 </script>
 <style scoped>
-	.teacher-item{
+	.course-item{
 		background: #FEFEFF;
 		height: 2.5rem;
 		/*width: 100%;*/
@@ -75,7 +75,7 @@
 		justify-content: space-around;
 
 	}
-	.teacher-item>div {
+	.course-item>div {
 		/*padding: 1rem;*/
 		font-size: 1.4rem;
 		/*background: #616CCB;*/

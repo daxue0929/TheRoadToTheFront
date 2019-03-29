@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CompletedCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/components/WelcomeTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/FrontBasicPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/FrontBasicPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/components/EvaluateItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/components/EvaluateItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherEvaluateInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherEvaluateInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/UpdateEmpBasicInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/UpdateEmpBasicInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TrainingResults.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TrainingResults.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/project1/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/project1/vue.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,26 +25,7 @@
     <favorites_list name="TheRoadToTheFront" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue/study/project1/src/components/WelcomeTitle.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +40,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GET_EMP_BYID</find>
       <find>handleClick</find>
       <find>header</find>
       <find>emp-form</find>
@@ -91,6 +69,7 @@
       <find>teacher-item</find>
       <find>completedCourse</find>
       <find>loginTime</find>
+      <find>course-item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,9 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/study/project1/src/store/mutation-types.js" />
-        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/test/Test.vue" />
-        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/admin/EmpBasicAllInfo.vue" />
         <option value="$PROJECT_DIR$/vue/study/project2/src/App.vue" />
         <option value="$PROJECT_DIR$/vue/study/project2/src/demo/demo2.vue" />
         <option value="$PROJECT_DIR$/vue/study/project2/src/demo/Demo1.vue" />
@@ -137,7 +113,6 @@
         <option value="$PROJECT_DIR$/day04/css/demo_js01.css" />
         <option value="$PROJECT_DIR$/day04/css/demo_js01_1.css" />
         <option value="$PROJECT_DIR$/day04/demo_js01.html" />
-        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherEvaluateInfo.vue" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/cookie/index.js" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/main.js" />
@@ -169,8 +144,12 @@
         <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/Index.vue" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/routes.js" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherInfo.vue" />
-        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue" />
         <option value="$PROJECT_DIR$/vue/study/project1/src/components/WelcomeTitle.vue" />
+        <option value="$PROJECT_DIR$/vue/study/project1/vue.config.js" />
+        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TrainingResults.vue" />
+        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue" />
       </list>
     </option>
   </component>
@@ -180,10 +159,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1252" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
+    <option name="y" value="15" />
+    <option name="width" value="1341" />
     <option name="height" value="704" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -234,15 +213,6 @@
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="project1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheRoadToTheFront" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheRoadToTheFront" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,26 +224,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheRoadToTheFront" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheRoadToTheFront" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheRoadToTheFront" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheRoadToTheFront" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,7 +372,8 @@
       <workItem from="1553648786679" duration="11595000" />
       <workItem from="1553676787444" duration="4159000" />
       <workItem from="1553739090976" duration="25003000" />
-      <workItem from="1553769132439" duration="7646000" />
+      <workItem from="1553769132439" duration="8389000" />
+      <workItem from="1553821594358" duration="10653000" />
     </task>
     <task id="LOCAL-00001" summary="es6入门1">
       <created>1548078866952</created>
@@ -550,11 +501,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553762710606</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="vue.project1.front.home update.next">
+      <created>1553789575176</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1553789575176</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378797000" />
+    <option name="totallyTimeSpent" value="390193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,11 +524,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="2" y="15" width="1341" height="704" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5033557" side_tool="true" weight="0.1732342" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4966443" weight="0.28996283" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4966443" visible="true" weight="0.28144172" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.5012285" weight="0.113175675" />
@@ -578,13 +535,13 @@
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49962825" weight="0.34308943" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="TypeScript" order="6" sideWeight="0.49814126" weight="0.32616487" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.8292683" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.5495652" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.26007327" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49888477" weight="0.3260135" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4944238" weight="0.7121951" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4944238" weight="0.17235772" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -632,19 +589,10 @@
     <MESSAGE value="mpvue.now" />
     <MESSAGE value="bysj.now" />
     <MESSAGE value="vue.project1.front.home update" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue.project1.front.home update" />
+    <MESSAGE value="vue.project1.front.home update.next" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue.project1.front.home update.next" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day05/canvas01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="e#183#191#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day02/css03.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -713,34 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherEvaluateInfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding>
-            <element signature="e#1214#1228#0" />
-            <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseInfo.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TrainingResults.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -952,24 +872,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CompletedCourse.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CompletedCourse.vue" />
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/Index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -980,24 +887,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherInfo.vue">
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/components/WelcomeTitle.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="936">
+          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/components/WelcomeTitle.vue">
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherEvaluateInfo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        <state relative-caret-position="-381">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TrainingResults.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/TeacherInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="25" column="11" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2283">
+          <caret line="121" column="8" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseEvaluateInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/CourseInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
         </state>
       </provider>
     </entry>

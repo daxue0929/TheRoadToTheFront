@@ -1,5 +1,22 @@
 //vue.config.js
 
 module.exports = {
-  publicPath: './'
+  publicPath: './',
+
+  // configureWebpack: {
+  //
+  // }
+
+  configureWebpack: config => {
+    if (process.env.NODE_ENV == 'production'){
+      //为生产环境配置
+
+
+    } else {
+      //为开发环境配置
+
+
+    }
+  }
+
 }
