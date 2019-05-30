@@ -8,7 +8,7 @@
 			<span class="item">教员批语</span>
 		</div>
 		<div class="mid-item" v-for="item in inTrainingTnfo">
-			<span class="item">{{item.courseName}}</span>
+			<span class="item">{{item.teacherName}}</span>
 			<span class="item">{{item.courseScore}}</span>
 			<span class="item">{{item.teacherName}}</span>
 			<span class="item">{{item.teacherSpeak}}</span>
@@ -25,10 +25,10 @@
     data() {
       return {
         inTrainingTnfo: [
-          {courseName:'物理学发展史',courseScore:'86分', teacherName:'王小明',teacherSpeak:'正在培训'},
-          {courseName:'数学发展史',courseScore:'15分', teacherName:'王大明',teacherSpeak:'正在培训'},
-          {courseName:'化学发展史',courseScore:'90分', teacherName:'胖虎',teacherSpeak:'正在培训'},
-          {courseName:'历史学研究',courseScore:'10分', teacherName:'章二',teacherSpeak:'培训完成'}
+          {teacherName:'物理学发展史',courseScore:'86分', teacherName:'王小明',teacherSpeak:'认真刻苦，积极完成作业'},
+          {teacherName:'数学发展史',courseScore:'15分', teacherName:'王大明',teacherSpeak:'认真刻苦，积极完成作业'},
+          {teacherName:'化学发展史',courseScore:'90分', teacherName:'胖虎',teacherSpeak:'认真刻苦，积极完成作业'},
+          {teacherName:'历史学研究',courseScore:'10分', teacherName:'章二',teacherSpeak:'认真刻苦，积极完成作业'}
         ]
 			}
 		}

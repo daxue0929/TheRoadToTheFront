@@ -13,10 +13,10 @@
 									<el-input v-model="form.empCompanyName"></el-input>
 								</el-form-item>
 								<el-form-item label="员工工号">
-									<el-input v-model="form.courseId"></el-input>
+									<el-input v-model="form.empId"></el-input>
 								</el-form-item>
 								<el-form-item label="员工姓名">
-									<el-input v-model="form.tName"></el-input>
+									<el-input v-model="form.empName"></el-input>
 								</el-form-item>
 								<el-form-item label="员工密码">
 									<el-input v-model="form.passWord"></el-input>
@@ -67,8 +67,8 @@
         labelPosition: 'left',
         form: {
           empCompanyName:'',
-          courseId: '',
-          tName: '',
+          empId: '',
+          empName: '',
           passWord: '',
 					empSex:'',
 					empHomeAddress:'',
@@ -87,7 +87,7 @@
       },
       resetForm() {
         this.form = {
-          courseId: '',
+          empId: '',
           passWord: '',
           company: ''
         }

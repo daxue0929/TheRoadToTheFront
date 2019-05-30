@@ -2,7 +2,7 @@
 	<div>
 		<WelcomeTitle name="课程信息"></WelcomeTitle>
 		<div class="course-item" v-for="teacher in t">
-			<div><span class="label-title">课程名称：</span>{{teacher.tName}}</div>
+			<div><span class="label-title">课程名称：</span>{{teacher.empName}}</div>
 			<div><span class="label-title">授课老师：</span>{{teacher.tStartTime}}</div>
 			<div><span class="label-title">课程学时：</span>{{teacher.tEducation}}</div>
 			<div><span class="label-title">课程类型：</span>{{teacher.autograph}}</div>
@@ -20,15 +20,15 @@
       return {
         t: [
           {
-            tName: '王小二',
-            tStartTime: '2018-5-4',
-            tEducation: '硕士',
+            empName: '历史之路',
+            tStartTime: '1988-09-21',
+            tEducation: '教授',
             autograph: '每天进步一点点，蓦然回首，已经前进了一大步'
           },
           {
-            tName: '王小二',
-            tStartTime: '2018-5-4',
-            tEducation: '硕士',
+            empName: '文艺复兴',
+            tStartTime: '2015-5-4',
+            tEducation: '博士',
             autograph: '每天进步一点点，蓦然回首，已经前进了一大步'
           }
 				]

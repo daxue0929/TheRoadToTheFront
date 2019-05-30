@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于js对象理解1</title>
+</head>
+<body>
+<button id="btn_test">测试按钮</button>
+<hr>
+<!--
+ 1.this是什么？
+ 		* 任何函数本质上都是通过某个对象老调用的（如果没有指定就是window）
+ 		* 所有函数内部都有一个变量this
+ 		* 它的值是调用当前函数的当前对象
+ 2.如何确定this的值？
+ 		* test(): window
+ 		* p.test(): p
+ 		* new test(): 新创建的对象
+ 		* p.call(obj): obj调用的
+ -->
+<script>
+	function test01() {
+    let p = {
+      name: "wangle",
+      age: 18,
+      setAge: function (age) {
+        this.age = age
+      },
+      setName: function (name) {
+        this.name = name
+      },
+      getName: function () {
+        return this.name
+      },
+      getAge: function () {
+        return this.age
+      }
+    };
+    p.setName("王二")
+    p.setAge(25)
+    console.log(p.getAge()+"--"+p.getName())
+	}
+	// test01()
+	
+	function test02() {
+		document.getElementById("btn_test").onclick = function () {	//dom事件的回调函数
+			window.alert(this.innerHTML)
+    }
+    //定时器
+		  //超时定时器
+		  //循环定时器
+    setTimeout(function () { //超时回调函数
+			window.alert("到点了")
+    },2000)
+  }
+  // test02()
+
+	
+	function test03() {
+		/* 1. IIFE: 立即执行调用函数表达式
+		   2. 作用：
+		   		* 隐藏实现
+		   		* 不会污染外部（全局）命名空间
+		*/
+		(function () { //匿名函数自调用
+		  let a = 3
+			console.log("这是IIFE",a)
+    })()
+
+		let a = 4
+		console.log(a);
+
+    (function () {
+      let a = 1
+      function test() {
+				console.log(++a)
+      }
+      window.$ = function () {
+				return {
+				  test: test
+				}
+      }
+    })()
+  }
+  // test03()
+	// $().test()
+
+</script>
+</body>
+</html>

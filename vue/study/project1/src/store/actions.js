@@ -1,8 +1,33 @@
-import { GET_EMP_ALL_INFO, GET_EMP_BYID, NEW_EMP_REGIST, SHOW_PEOPLE } from "./mutation-types";
+import {
+  ADMIN_LOGIN,
+  GET_EMP_ALL_INFO,
+  GET_EMP_BYID,
+  NEW_EMP_REGIST,
+  UPDATE_EMP_ITEM,
+  USER_LOGIN
+} from "./mutation-types";
 import axios from "axios";
+import { baseURL } from "../util/config";
 
-const baseURL = "http://localhost:8090/bysj/"
 const actions = {
+  
+  //普通员工完善个人信息
+  [UPDATE_EMP_ITEM] ({commit}) {
+    // axios.get(baseURL+'',{
+    //
+    // })
+    // .then(function (response) {
+    //   commit({
+    //     type: UPDATE_EMP_ITEM,
+    //     value:response.data
+    //   })
+    // })
+    // .catch(function (msg) {
+    //   window.console.log(msg)
+    // })
+  },
+
+  //管理员获取所有的员工信息
   [GET_EMP_ALL_INFO]({commit}) {
     axios.get(baseURL + 'EmpQueryAllServlet', {})
     .then(function (response) {
@@ -17,16 +42,11 @@ const actions = {
       window.console.log(error)
     });
   },
-  [SHOW_PEOPLE]({commit}, input) {
-    commit({
-      type: SHOW_PEOPLE,
-      value: input.value
-    })
-  },
+
   [GET_EMP_BYID]({commit}, input) {
     axios.get(baseURL + 'EmpQueryByIdServlet', {
       params: {
-        courseId: input.value
+        empId: input.value
       }
     }).then(function (res) {
       commit({
@@ -50,7 +70,36 @@ const actions = {
       window.console.log(msg)
     })
   },
-
+  [ADMIN_LOGIN]({commit}, input) {
+    window.console.log(input)
+    axios.get(baseURL + 'AdminLoginServlet', {
+      params: {
+        id: input.form.empId,
+        passWord: input.form.passWord
+      }
+    }).then(function (res) {
+      window.console.log(res)
+      commit({
+        type: ADMIN_LOGIN,
+        value: res.data
+      })
+    })
+  },
+  [USER_LOGIN]({commit},input) {
+    axios.get(baseURL+ 'EmpLoginServlet',{
+      params: {
+        id: input.form.empId,
+        passWord: input.form.passWord
+      }
+    }).then(function (res) {
+      commit({
+        type:USER_LOGIN,
+        value: res.data
+      })
+    }).catch(function (msg) {
+      window.console.log(msg)
+    })
+  }
 }
 
 export default actions

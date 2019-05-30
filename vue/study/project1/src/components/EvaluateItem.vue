@@ -1,8 +1,8 @@
 <template>
 	<div class="eva-item">
 		<div class="left">
-			<span class="c_name">{{courseName}}</span>
-			<span class="t_name">{{teacherName}}</span>
+			<span class="c_name">{{name}}</span>
+			<!--<span class="t_name">{{teacherName}}</span>-->
 		</div>
 		<div class="mid">{{value}}</div>
 		<div class="right">
@@ -16,8 +16,7 @@
   export default {
     name: "EvaluateItem",
 		props: {
-      courseName:'',
-			courseScore:'',
+    	name:'',
 			value:'',
 			evaluatePeople:'',
 			evaluateTime:''
@@ -55,7 +54,7 @@
 			.t_name{
 				display: block;
 				margin-top: 20px;
-				font-size: 12px;
+				font-size: 20px;
 				text-align: center;
 			}
 		}

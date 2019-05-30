@@ -51,10 +51,8 @@
 			<!--</el-table-column>-->
 		<!--</el-table>-->
 		<form class="emp-form">
-			<span class="label">员工工号</span>
-			<input type="text" :value="emp.courseId"><br>
 				<span class="label">员工姓名</span>
-			<input type="text" :value="emp.tName"><br>
+			<input type="text" :value="emp.empName"><br>
 			<span class="label">公司名称</span>
 			<input type="text" :value="emp.empCompanyName"><br>
 			<span class="label">性别</span>
@@ -83,41 +81,30 @@
 </template>
 
 <script>
-  import { GET_EMP_ALL_INFO, GET_EMP_BYID } from "../../../store/mutation-types";
+  import { GET_EMP_BYID, UPDATE_EMP_ITEM } from "../../../store/mutation-types";
 
   export default {
     name: "UpdateEmpBasicInfo",
-
     data() {
       return {
-        emp: {
-          tName:'王二狗',
-          courseId:'001',
-          empCompanyName:'公司A',
-          empSex:'男',
-          empNativePlace:'北京市朝阳区一号',
-          empNationality: '中国',
-					empNation: '汉族',
-          empMaritalStatus: '未婚',
-					empWorkYear: '10年',
-          empStatus: '就职',
-					empHomeAddress: '员工宿舍一号',
-					empPhoneNumber: '17856093817'
-
-        },
+        emp: this.$store.state.empMsg
 				// emp: this.$store.state.objEmp,
       }
     },
     methods: {
       handleUpdate() {
 				window.console.log(this.emp)
+
+				this.$store.dispatch({
+					type: UPDATE_EMP_ITEM
+				})
 				alert("更新成功")
 			}
     },
 		mounted() {
 			this.$store.dispatch({
 				type: GET_EMP_BYID,
-				value: this.$store.state.courseId
+				value: this.$store.state.empId
 			})
     }
   }

@@ -9,7 +9,7 @@
 			<span class="item">培训状态</span>
 		</div>
 		<div class="mid-item" v-for="item in inTrainingTnfo">
-			<span class="item">{{item.courseName}}</span>
+			<span class="item">{{item.teacherName}}</span>
 			<span class="item">{{item.courseScore}}</span>
 			<span class="item">{{item.startTime}}</span>
 			<span class="item">{{item.trainStatus}}</span>
@@ -25,14 +25,14 @@
     data() {
       return {
         emp: {
-          tName:'张三',
+          empName:'张三',
           empCompanyName:'微软科技'
         },
         inTrainingTnfo: [
-					{courseName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
-          {courseName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
-          {courseName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
-          {courseName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'培训完成'}
+					{teacherName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
+          {teacherName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
+          {teacherName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'正在培训'},
+          {teacherName:'物理学发展史',courseScore:'张明日', startTime:'2018-06-12',trainStatus:'培训完成'}
         ]
 			}
 		},

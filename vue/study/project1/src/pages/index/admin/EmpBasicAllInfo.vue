@@ -43,79 +43,79 @@
         courseAllData: this.$store.state.courseAllData,
         empAllInfoTableData: [
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 1, empName: '王大', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 2, empName: '张三', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 3, empName: '李四', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 4, empName: '赵武', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 5, empName: '牛儿', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 6, empName: '欧阳', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 7, empName: '南宫', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 8, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 9, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 10, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 11, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
           {
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 12, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
           },
 					{
-            courseId: 12, tName: '大牛', empSex: '男', empBirth: '1998-3-8',
+            empId: 13, empName: '大牛', empSex: '男', empBirth: '1998-3-8',
             empNation: '汉族', empMaritalStatus: '已婚', empNationality: '中国', empNativePlace: '河南籍贯',
             empIdNumber: '4127126199678928', empStatus: '离职', empWorkYear: '10年', empHomeAddress: '宿舍1号',
             empPhoneNumber: '17546827098'
@@ -133,9 +133,17 @@
 		methods: {
       updateEmpMsg(e){
         window.console.log(e)
+				this.$router.push({
+
+				})
 			},
       deleteEmpMsg(e) {
-        window.console.log(e)
+        // window.console.log(e)
+        for (let i =0; i < this.empAllInfoTableData.length; i++) {
+          if (e.empId === this.empAllInfoTableData[i].empId){
+            this.empAllInfoTableData.splice(i,1);
+          }
+        }
 			},
       addEmpItem() {
         //加入一个员工

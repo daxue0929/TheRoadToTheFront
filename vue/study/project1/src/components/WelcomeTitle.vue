@@ -6,7 +6,7 @@
 		</div>
 		<div class="header-introduction">
 
-			<div>登录人员：{{emp.tName}}</div>
+			<div>登录人员：{{emp.empName}}</div>
 			<div>所在公司：{{emp.empCompanyName}}</div>
 			<div>登录时间：{{loginTime}}</div>
 		</div>
@@ -19,7 +19,7 @@
     data() {
       return {
         emp: {
-          tName:this.$store.state.tName,
+          empName:this.$store.state.empName,
           empCompanyName: this.$store.state.companyTitle
         },
 				time:new Date()

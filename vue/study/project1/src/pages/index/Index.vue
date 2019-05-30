@@ -59,7 +59,7 @@
     name: "Index",
     data() {
       return {
-        companyTitle: this.$store.state.companyTitle,
+        companyTitle: this.$store.state.empMsg.empCompanyName,
         activeNames: []
       }
     },

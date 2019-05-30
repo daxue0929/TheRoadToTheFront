@@ -22,9 +22,9 @@
 							</el-collapse-item>
 							<el-collapse-item title="评价管理中心" name="评价管理中心">
 								<p class="aside-right-item" @click="evaluateAllInfo">全部评价管理</p>
-								<p class="aside-right-item" @click="evaluateEmpInfo">员工评价管理</p>
-								<p class="aside-right-item" @click="evaluateCourseInfo">课程评价管理</p>
-								<p class="aside-right-item" @click="evaluateTeacherInfo">教员评价管理</p>
+								<!--<p class="aside-right-item" @click="evaluateEmpInfo">员工评价管理</p>-->
+								<!--<p class="aside-right-item" @click="evaluateCourseInfo">课程评价管理</p>-->
+								<!--<p class="aside-right-item" @click="evaluateTeacherInfo">教员评价管理</p>-->
 							</el-collapse-item>
 						</el-collapse>
 					</el-col>

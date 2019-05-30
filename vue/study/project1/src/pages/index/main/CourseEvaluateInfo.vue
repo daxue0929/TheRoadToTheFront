@@ -5,8 +5,7 @@
 
 		</div>
 		<EvaluateItem v-for="evaluateItem in evaluateList"
-									:courseName="evaluateItem.courseName"
-									:teacherName="evaluateItem.courseScore"
+									:name="evaluateItem.name"
 									:value="evaluateItem.value"
 									:evaluatePeople="evaluateItem.evaluatePeople"
 									:evaluateTime="evaluateItem.evaluateTime"
@@ -22,23 +21,19 @@
       return {
         evaluateList: [
           {
-            courseName: '物理发展史',
-            courseScore: '刘五老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你',
+            name: '物理发展史',
+
+            value: '物理学学发展史这门学的历史，爱因斯坦的相对论、霍金的黑洞学说。',
             evaluatePeople: '张一员工',
-            evaluateTime: '2018-12-11'
+            evaluateTime: '2018-10-11'
           },{
-            courseName: '数学发展史',
-            courseScore: '赵四老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你',
+            name: '化学',
+            value: '化学发展史这门学的历史，听了这门课让人深刻了解了化学的专业的知识。',
             evaluatePeople: '张一员工',
             evaluateTime: '2018-12-11'
           }, {
-            courseName: '生物发展史',
-            courseScore: '大雪老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你物理学学发展史这门学的历史，' +
-              '听了这门课之爱你爱你爱你爱你爱爱你爱你物理学学发展史这门学的历史，听了这门课之爱你爱这门学的历史，' +
-              '听了这门课之爱你爱你爱你爱你爱爱你爱你物理学你爱你爱你爱爱你爱你',
+            name: '政治学',
+            value: '政治学是一个优秀的学科',
             evaluatePeople: '李三员工',
             evaluateTime: '2018-12-11'
           }

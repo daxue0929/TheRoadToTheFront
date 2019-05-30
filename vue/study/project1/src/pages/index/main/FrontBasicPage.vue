@@ -7,7 +7,7 @@
 			</div>
 			<div class="header-introduction">
 				<!-- 一个小简介 -->
-				<div>登录人员：{{emp.tName}}</div>
+				<div>登录人员：{{emp.empName}}</div>
 				<div>所在公司：{{emp.empCompanyName}}</div>
 				<div>登录时间：{{loginTime}}</div>
 			</div>
@@ -17,8 +17,8 @@
 			<div class="section-title">主页详情信息</div>
 			<div class="section-mid">
 				<div class="section-mid-col">
-					<span>员工编号：{{emp.courseId}}</span>
-					<span>员工姓名：{{emp.tName}}</span>
+					<span>员工编号：{{emp.empId}}</span>
+					<span>员工姓名：{{emp.empName}}</span>
 				</div>
 				<div class="section-mid-col">
 					<span>员工国籍：{{emp.empNationality}}</span>
@@ -44,9 +44,9 @@
 
 			</div>
 			<div class="section-footer">
-				<div class="section-footer-item">刷新信息</div>
-				<div class="section-footer-item">完善信息</div>
-				<div class="section-footer-item">退出登录</div>
+				<div class="section-footer-item" @click="refreshTheInformation">刷新信息</div>
+				<div class="section-footer-item" @click="wanShanXinXi">完善信息</div>
+				<div class="section-footer-item" @click="layOut">退出登录</div>
 			</div>
 		</div>
 
@@ -62,22 +62,7 @@
     name: "FrontBasicPage",
 		data() {
       return {
-				emp: {
-				  tName:'张三',
-          empCompanyName:'微软科技',
-          courseId:'001',
-
-          empSex:'男',
-          empNativePlace:'华夏国北京市朝阳区一号街道1101号',
-          empNationality: '中国',
-          empNation: '汉族',
-          empMaritalStatus: '未婚',
-          empWorkYear: '10年',
-          empStatus: '就职',
-          empHomeAddress: '员工宿舍一号',
-          empPhoneNumber: '17856093817',
-					empIdNumber: '1890679658418022819'
-				},
+				emp: this.$store.state.empMsg,
 			}
 		},
 		computed: {
@@ -92,47 +77,61 @@
 		methods: {
 			test() {
 			  return 0
+			},
+      layOut() {
+			  this.$router.push({
+					path: '/login'
+				})
+			},
+      wanShanXinXi() {
+			  this.$router.push({
+					path: '/index/UpdateEmpBasicInfo/'
+				})
+			},
+      refreshTheInformation() {
+			  this.$router.push({
+					path: '/index/FrontBasicPage'
+				})
 			}
 		},
 		props: {
-
 		}
   }
 </script>
 
 <style scoped lang="scss">
-.header{
-	height: 5rem;
-	width: 100%;
-	/*background: #FDEADF;*/
-}
-.header > .header-top{
-	/*background: #F5F3EB;*/
-	height: 30px;
-}
-.header-top-img{
-	display: inline-block;
-	margin-left: 1rem;
-	width: 2.6rem;
+	.header{
+		height: 5rem;
+		width: 100%;
+		/*background: #FDEADF;*/
+	}
+	.header > .header-top{
+		/*background: #F5F3EB;*/
+		height: 30px;
+	}
+	.header-top-img{
+		display: inline-block;
+		margin-left: 1rem;
+		width: 2.6rem;
 
-}
-.header-top-p{
-	display: inline-block;
-	position: relative;
-	top: -.7rem;
-	margin-left: 1rem;
-	font-size: 1.8rem;
-	color: #CB4D40;
-	/*background: #BFCB85;*/
-}
-.header-introduction{
-	margin-top: 1rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	font-size: 1.4rem;
-	color: #98382E;
-}
+	}
+	.header-top-p{
+		display: inline-block;
+		position: relative;
+		top: -.7rem;
+		margin-left: 1rem;
+		font-size: 1.8rem;
+		color: #CB4D40;
+		/*background: #BFCB85;*/
+	}
+	.header-introduction{
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		font-size: 1.4rem;
+		color: #98382E;
+	}
 
 .section{
 	height: 20rem;

@@ -22,12 +22,15 @@ import EvaluateAllInfo from "./pages/index/admin/EvaluateAllInfo";
 import EmpCourseInfo from "./pages/index/admin/EmpCourseInfo";
 import AddEmpItem from "./pages/index/admin/AddEmpItem";
 import FrontBasicPage from "./pages/index/main/FrontBasicPage";
+import AdminLogin from "./pages/index/admin/AdminLogin";
+import EndBasicPage from "./pages/index/admin/EndBasicPage";
 
 export const routes = [
   {path: '/test', component: HelloWorld},
   {path: '/test/index', component: Test},
   {path: '/login', component: Login},
   {path: '/regist', component: Regist},
+  {path:'/AdminLogin', component: AdminLogin},
   {
     path: '/index', component: Index,
     children: [
@@ -53,7 +56,8 @@ export const routes = [
       {path:'EvaluateTeacherInfo', component:EvaluateTeacherInfo},
       {path:'TeacherAllInfo',component:TeacherAllInfo},
       {path:'TeacherCourseInfo',component:TeacherCourseInfo},
-      {path:'AddEmpItem', component:AddEmpItem}
+      {path:'AddEmpItem', component:AddEmpItem},
+      {path:'EndBasicPage',component:EndBasicPage}
     ]
   }
 ]

@@ -2,7 +2,7 @@
 	<div>
 		<WelcomeTitle name="教员信息"></WelcomeTitle>
 		<div class="course-item" v-for="teacher in t">
-			<div><span class="label-title">教员姓名：</span>{{teacher.tName}}</div>
+			<div><span class="label-title">教员姓名：</span>{{teacher.empName}}</div>
 			<div><span class="label-title">执教时间：</span>{{teacher.tStartTime}}</div>
 			<div><span class="label-title">学历层次：</span>{{teacher.tEducation}}</div>
 			<div><span class="label-title">勉励签名：</span>{{teacher.autograph}}</div>
@@ -18,38 +18,38 @@
       return {
         t: [
           {
-            tName: '王小二',
+            empName: '王小二',
             tStartTime: '2018-5-4',
             tEducation: '硕士',
             autograph: '每天进步一点点，蓦然回首，已经前进了一大步'
 
           }
           , {
-            tName: '王光明',
+            empName: '王光明',
             tStartTime: '2012-11-4',
             tEducation: '硕士',
             autograph: '生命在于运动，运动的生命是健康的保证。开心'
           },
           {
-            tName: '王光明',
+            empName: '王光明',
             tStartTime: '2012-11-4',
             tEducation: '硕士',
             autograph: '声明在于运动，运动的生命是健康的保证。开心'
           },
           {
-            tName: '王光明',
+            empName: '王光明',
             tStartTime: '2012-11-4',
             tEducation: '硕士',
             autograph: '生命在于运动，运动的生命是健康的保证。开心'
           },
           {
-            tName: '李晓明',
+            empName: '李晓明',
             tStartTime: '2001-11-4',
             tEducation: '博士',
             autograph: '有所爱，有所期待。每一天都是美好的日子。。'
           },
           {
-            tName: '张大明',
+            empName: '张大明',
             tStartTime: '2008-10-2',
             tEducation: '博士',
             autograph: '今天是个好日历，明天也是好的呀。每天如此。'

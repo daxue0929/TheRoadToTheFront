@@ -4,7 +4,7 @@
 	<!--</div>-->
 	<div class="admin-emp-center">
 		<div class="header-search">
-			<button class="addBtn" @click="addCourseItem">添加教员</button>
+			<button class="addBtn" @click="addCourseItem">添加一门课程</button>
 		</div>
 		<div class="emp-all-table">
 			<el-table :data="courseAllData" height="650" style="width: 100%">
@@ -33,16 +33,28 @@
     data() {
       return {
         //课程编号、课程名，课程类型、课程备注
-        courseAllData: [
-          {
-            courseId: 12, courseName: '大牛', courseHour:'2017-02-23',autograph:'快乐幸福多一点'
-          }
-        ]
+        courseAllData: this.$store.state.courseArr
       }
     },
 		methods: {
       addCourseItem() {
         alert("这需要跳转到添加一个课程的表单")
+			},
+      updateEmpMsg(course){
+
+        window.console.log(course)
+
+				// 写一个表格
+
+
+			},
+      deleteEmpMsg(course){
+        window.console.log(course)
+				for (let i =0; i < this.courseAllData.length; i++) {
+				  if (course.courseId === this.courseAllData[i].courseId){
+						this.courseAllData.splice(i,1);
+					}
+				}
 			}
 		}
   }

@@ -2,9 +2,9 @@
 	<div>
 		<form class="emp-form">
 			<span class="label">员工工号：</span>
-			<input type="text" :value="emp.courseId"><br>
+			<input type="text" :value="emp.empId"><br>
 			<span class="label">员工姓名：</span>
-			<input type="text" :value="emp.tName"><br>
+			<input type="text" :value="emp.empName"><br>
 			<span class="label">公司名称：</span>
 			<input type="text" :value="emp.empCompanyName"><br>
 			<span class="label">性别：</span>
@@ -31,32 +31,34 @@
 		</form>
 	</div>
 </template>
-
 <script>
   export default {
     name: "AddEmpItem",
 		data() {
       return {
         emp: {
-          tName:'王二狗',
-          courseId:'001',
-          empCompanyName:'公司A',
-          empSex:'男',
-          empNativePlace:'北京市朝阳区一号',
-          empNationality: '中国',
-          empNation: '汉族',
-          empMaritalStatus: '未婚',
-          empWorkYear: '10年',
-          empStatus: '就职',
-          empHomeAddress: '员工宿舍一号',
-          empPhoneNumber: '17856093817',
-          empIdNumber:'413478650962345'
+          empName:'',
+          empId:'',
+          empCompanyName:'',
+          empSex:'',
+          empNativePlace:'',
+          empNationality: '',
+          empNation: '',
+          empMaritalStatus: '',
+          empWorkYear: '',
+          empStatus: '',
+          empHomeAddress: '',
+          empPhoneNumber: '',
+          empIdNumber:''
         }
 			}
 		},
 		methods: {
       handleSubmit() {
-
+        alert("提交成功，跳转到员工中心")
+				this.$router.push({
+					path: '/admin/EmpBasicAllInfo'
+				})
 			}
 		}
   }

@@ -23,10 +23,9 @@
 				<!--<span class="eva-time">2018-12-13</span>-->
 			<!--</div>-->
 		<!--</div>-->
-		教师评价信息表
+		<div class="title">教师评价信息表</div>
 		<EvaluateItem v-for="evaluateItem in evaluateList"
-									:courseName="evaluateItem.courseName"
-									:teacherName="evaluateItem.courseScore"
+									:name="evaluateItem.name"
 									:value="evaluateItem.value"
 									:evaluatePeople="evaluateItem.evaluatePeople"
 									:evaluateTime="evaluateItem.evaluateTime"
@@ -44,27 +43,22 @@
       return {
         evaluateList: [
           {
-            courseName: '数学发展史',
-						courseScore: '大雪老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你',
+            name: '张老师',
+            value: '张老师讲课幽默风趣',
             evaluatePeople: '张一员工',
 						evaluateTime: '2018-12-11'
           },
           {
-            courseName: '数学发展史',
-						courseScore: '大雪老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你',
-						evaluatePeople: '张一员工',
-						evaluateTime: '2018-12-11'
+            name: '王老师',
+            value: '王老师讲课发人深省',
+						evaluatePeople: '张二员工',
+						evaluateTime: '2017-10-05'
           },
           {
-            courseName: '数学发展史',
-            courseScore: '大雪老师',
-            value: '物理学学发展史这门学的历史，听了这门课之爱你爱你爱你爱你爱爱你爱你物理学学发展史这门学的历史，' +
-							'听了这门课之爱你爱你爱你爱你爱爱你爱你物理学学发展史这门学的历史，听了这门课之爱你爱这门学的历史，' +
-							'听了这门课之爱你爱你爱你爱你爱爱你爱你物理学你爱你爱你爱爱你爱你',
-            evaluatePeople: '张一员工',
-            evaluateTime: '2018-12-11'
+            name: '李老师',
+            value: '李老师耐心解决学生的难题，可爱可敬。',
+            evaluatePeople: '张三员工',
+            evaluateTime: '2018-1-1'
           }
 
         ]
@@ -76,6 +70,15 @@
 </script>
 
 <style scoped lang="scss">
+	.title{
+		width: 100%;
+		height: 5rem;
+		line-height: 5rem;
+		font-size: 2rem;
+		color: red;
+		position: relative;
+		left: 3rem;
+	}
 	/*.eva-item{*/
 		/*margin-bottom: 20px;*/
 		/*display: flex;*/

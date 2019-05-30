@@ -12,17 +12,17 @@
 					<el-row>
 						<el-col :span="12" :offset="6">
 							<el-form :label-position="labelPosition" label-width="100px" :model="form">
-								<el-form-item label="员工工号">
-									<el-input v-model="form.courseId"></el-input>
-								</el-form-item>
-								<el-form-item label="员工密码">
-									<el-input v-model="form.passWord"></el-input>
-								</el-form-item>
-								<el-form-item label="请选择公司">
-									<el-select v-model="form.company" placeholder="请选择公司">
-										<el-option label="A公司" value="shanghai"></el-option>
-										<el-option label="B公司" value="beijing"></el-option>
+								<el-form-item label="请选择身份">
+									<el-select v-model="form.type" placeholder="请选择身份类型">
+										<el-option label="管理员" value="管理员"></el-option>
+										<el-option label="普通用户" value="普通用户"></el-option>
 									</el-select>
+								</el-form-item>
+								<el-form-item :label="this.form.type == '管理员' ? '管理员用户名' : '员工工号' ">
+									<el-input v-model="form.empId"></el-input>
+								</el-form-item>
+								<el-form-item :label="this.form.type == '管理员' ? '管理员密码' : '员工密码'">
+									<el-input v-model="form.passWord"></el-input>
 								</el-form-item>
 								<el-form-item>
 									<el-button type="primary" @click="submitForm">登录</el-button>
@@ -43,11 +43,10 @@
 <script>
   /**
 	 * /login
-	 *
    */
-
   import Header from "../../components/Header";
-  import { SET_EMP_ID } from "../../store/mutation-types";
+  import { ADMIN_LOGIN, USER_LOGIN } from "../../store/mutation-types";
+
   export default {
     name: "Login",
     components: {Header},
@@ -55,30 +54,55 @@
       return {
         labelPosition: 'left',
         form: {
-          courseId: '',
+          empId: '',
           passWord: '',
-          company: ''
+          type: ''
         }
 			}
 		},
 		methods: {
       submitForm() {
-
         //登录服务,登录成功跳转到员工主页面
 				//登录失败,就提示重新登录
-				this.$router.push({
-					path: "/index"
-				})
-				this.$store.commit({
-					type: SET_EMP_ID,
-					value: this.form.courseId
-				})
+
+				if (this.form.type === '管理员'){
+				  //这里处理管理员用户登录
+					// this.$store.dispatch({
+					// 	type: ADMIN_LOGIN,
+					// 	form:{...this.form}
+					// })
+					//这几行存在一个异步的问题
+            this.$router.push({
+              path: '/admin/EndBasicPage'
+            })
+				} else{
+				  // this.$store.dispatch({
+					// 	type: USER_LOGIN,
+					// 	form:{...this.form}
+					// })
+					// for (let i = 0; i< this.$store.empMsg.length;i++){
+					//  	 if (this.$store.state.empMsg[i] === this.form.empId){
+          //
+					// 	 }
+					// }
+				  //这里处理普通用户登录
+          this.$router.push({
+            path:'./index/FrontBasicPage'
+          })
+				}
+				// this.$router.push({
+				// 	path: "/index"
+				// })
+				// this.$store.commit({
+				// 	type: SET_EMP_ID,
+				// 	value: this.form.empId
+				// })
       },
       resetForm() {
         this.form = {
-          courseId: '',
+          empId: '',
           passWord: '',
-          company: ''
+          type: ''
 				}
       }
 		}
@@ -109,6 +133,4 @@
 			}
 		}
 	}
-
-
 </style>
