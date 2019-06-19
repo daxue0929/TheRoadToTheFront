@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	<!--引入three.js模块-->
+	<script src="node_modules/three/build/three.js"></script>
+	<script src="node_modules/three/examples/js/vr/WebVR.js"></script>
 	<style>
 		*{
 			margin: 0;
@@ -11,31 +14,61 @@
 		body{
 			width: 100%;
 		}
-		canvas{
-			margin:auto auto;
+		.main{
+			width: 600px;
+			height: 500px;
+			background: #E4FFED;
 		}
 	</style>
-	<script src="node_modules/three/build/three.js"></script>
-
 </head>
 <body>
+	<div class="main"></div>
 <script>
-  //场景
-  let scene = new THREE.Scene();
 
-  //透视相机
-  let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight);
+
+  const three = THREE;
+
+  //场景
+  var scene = new three.Scene();
+
+  //照相机
+  var camera = new three.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
   //渲染器
-  let renderer = new THREE.WebGLRenderer();
+  var renderer = new three.WebGLRenderer();
+  renderer.setSize(500,400); //设置渲染区域大小
 
-  //设置渲染器的大小为浏览器的宽度,也就是内容区的宽度
-  renderer.setSize(200,200);
+	//设置渲染器渲染的DOM节点
+  let mainDom = document.getElementsByClassName("main")[0];
+  mainDom.appendChild( renderer.domElement )
 
-  document.body.appendChild(renderer.domElement);
+  var geometry = new three.BoxGeometry( 1, 1, 1 );
+  var material = new three.MeshBasicMaterial( { color: 0x84FFE2 } );
+  var cube = new three.Mesh( geometry, material );
+  scene.add( cube );
 
+  camera.position.z = 5;
+
+
+  var render = function () {
+    requestAnimationFrame( render );
+
+    cube.rotation.x += 0.1;
+    cube.rotation.y += 0.1;
+
+    renderer.render(scene, camera);
+  };
+
+  render();
+
+
+
+  // document.getElementsByClassName("main")[0].appendChild( WEBVR.createButton( renderer ) );
+  // renderer.vr.enabled = true;
+  // renderer.setAnimationLoop( function () {
+  //   renderer.render( scene, camera );
+  // } );
 
 </script>
-
 </body>
 </html>
