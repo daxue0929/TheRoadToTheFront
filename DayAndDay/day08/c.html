@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<form action="clock.html" id="form" onsubmit="return onSubmitMethod()">
+<!--<form action="./clock.html" id="form" onsubmit="alert('123')">-->
+
+	<input type="text" id="inputValue">
+
+	<!--<input type="submit" value="提交">-->
+
+	<button type="submit">点击阻止</button>
+</form>
+
+<script>
+	// const submitBtn = document.getElementById("submit");
+	//
+	// submitBtn.onclick = function () {
+	//
+	// 	return false;
+	// };
+
+	function onSubmitMethod() {
+		const value = document.getElementById("inputValue")
+		// alert("daf")
+		if (value.value.length >= 6){
+			return true;
+		} else {
+			console.log("123")
+			return false
+		}
+	}
+
+</script>
+</body>
+</html>

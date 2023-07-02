@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试原生cs的页面</title>
+	<link id="skinLink" rel="stylesheet" href="css/demo_js01.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			height: 4000px;
+		}
+		.second-part{
+			margin-top: 500px;
+			height: 300px;
+			/*background: #CBA09B;*/
+			border: 2px solid darkblue;
+			column-width: 300px;   /*指定每一栏的理想宽度*/
+			column-count: 3;    /*指定有多少列*/
+		}
+		.btn_1{
+			width: 100px;
+			height: 50px;
+			position: relative;
+			top: 10px;
+			left: 10px;
+		}
+		.btn_1:focus-visible{
+			/*没看懂这个规则*/
+		 }
+		.third-part{
+			margin-top: 500px;
+			height: 400px;
+			background: #A0CBB0;
+		}
+		.goTop{
+			position: fixed;
+			top: 80%;
+			left: 90%;
+			padding: 2px 12px;
+			background: #ADCBB1;
+		}
+	</style>
+</head>
+<body>
+<div class="first-part" onclick="changeBgColor()">
+	你好
+</div>
+<div class="second-part">
+	<button class="btn_1">按钮</button>
+	一个烟雨朦胧的黄昏，我和妻在南京商厦门口就碰到过这样一个无家可归的老人，她是一位满头白发的妇人，
+	褴褛的衣衫，佝偻的背脊，旁边还有一个瘦如骨材、 约莫五岁的男孩子，那双满含哀凉的眼睛一直在环顾四周。
+	在我们经过她身旁时，她只是无力地将手中捧着的小旧铁饭盒左右摇动了几下，
+	算是讨要的意思，老人家的眼里充满了凄凉和渴望，我下意识地摸了摸口袋，发觉兜里竟没有一枚硬币，连五元、十元的纸币也没有，
+	只好抱歉地摇摇头。老妇人的眼神马上黯淡了下去，嘴里发出一声长长的叹息：“这年头，世道变了，讨饭也讨不到什么东西了……孩子饿的前胸贴后背，
+	可一天也讨不到一碗饭钱……哎！何时才是个头呀？”
+	老人家的这一声叹息顿时像锤子在我心头砸了一下，我无奈的望了一下妻，妻闻其声，不由得快速停下了脚步，转回头去看着她，不用猜测，
+	老人家脸上的皱纹和如霜的白发已经说明了她过去的沧桑与凄楚。她也许没有子女，也许孩子不孝， 也许是天灾人祸……但她实在是没有了生活的出路，
+	要不然的话，绝不会那么一大把年纪还带着孩子远到他乡去行乞，每天站在一个肮脏的角落里，满怀希望地看着一个个人走过来，
+	又满心失望地看着他们一个个走过去……见此光景，妻不禁停下脚步，掏出一张崭新的100元纸币，满脸笑容、弯腰躬身、双手递给她，
+	还把手里刚刚买的蛋糕和橘子轻轻放在老人的脚下。老人家接过后，竟激动得有些语无伦次：
+	“谢谢您，谢谢您呀……没想到，这世上还是有好心人！”那最后一句话，差点让我和爱妻落下泪来。100元，能干什么？可对于一个乞讨的人来说，
+	也许就是他们二个礼拜的伙食费。
+	从那天起，爱妻就多了一个心眼，每次买东西回来，她都会把找回的硬币放在一个特制的布袋里，在路上，只要遇到一些可怜的行乞者，
+	妻都会给二枚、或者三枚硬币。也就是从那天起，在妻的手提包里，多了一个特殊的小布袋，布袋里没有别的，只有几十个一元的硬币。
+	俗话说，在顺境中修行，你永远不能成佛。尽管我们生活在城市多年，也看惯了一些无言却酸楚的冷漠和无奈，可我们的心和信仰还在农村，
+	充其量，我们只能算一个城市边缘人。一个宽容的人，一个有爱的人，就是一个特别美丽的人，尤其是女人！
+</div>
+<div class="third-part">
+
+</div>
+<div class="goTop" onclick="goTop()">
+	<p>回到<br>顶部</p>
+</div>
+<script>
+  console.log(Math.floor(1.32));      //向下取整。舍弃小数部分
+  console.log('cat'.toUpperCase());  //字符串全部转换为大写字母
+
+	function changeBgColor() {
+    let skinLink = document.getElementById("skinLink");
+    skinLink.href = "./css/demo_js01_1.css"
+	}
+
+
+
+
+
+
+  let width = document.body.clientHeight;
+
+  function goTop() {
+    let gotoInterval = setInterval(function () {
+      if (width <= 0){
+        clearInterval(gotoInterval);
+			}
+      document.scrollingElement.scrollTop = width
+      width = width - 15;
+    },1);
+
+	}
+
+
+</script>
+</body>
+</html>

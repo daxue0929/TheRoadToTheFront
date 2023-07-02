@@ -1,0 +1,51 @@
+@charset="utf-8";
+/*CSS Document*/
+*{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;/*去掉列表符号*/}
+a,u{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-size: 16px;font-weight: 100;}
+b,strong{font-weight: 100;}
+i,em{font-style: normal;}
+/*上述公共样式，取消默认的标签的默认样式*/
+
+#top,#news{width: 1000px;margin: 0 auto;}
+/*top*/
+#top{width: 1000px;height: 100px;background: #ccc;margin: 0 auto;}
+#top h1{width: 150px;height: 100px;background: orange;float: left;}
+#top form{width: 247px;height: 100px;background: #cc6;float: right;}
+
+/*news*/
+#news{height: 269px;background: #C96;}
+.newsL{width: 479px;height: 269px;background: #999;float: left;}
+.newsL h2{font-size: 18px;color: #4044ff;/*background: orange;*/line-height: 18px;padding-left: 21px;padding-top: 36px;}
+.newsShow{background: pink;padding-left: 21px;margin-top: 29px;} 
+.newsShow li{height: 24px;background: #4B9FBE url(../image/6707.jpg) no-repeat;margin-bottom: 2px;
+	font-size: 12px;padding-left: 18px;white-space: nowrap;overflow: visible;
+/*	visible 默认值
+*/
+}
+/*
+	容器溢出
+*/
+.newsShow a{color: #4e4e4e;float:left;width: 197px;background: blue;overflow: hidden;color: red;text-overflow: ellipsis;}
+.newsShow span{float: right;}
+	/*
+		新闻条书写步骤
+		1.给li添加高度
+		2.处理内容样式
+		3.如果新闻条后面有日期的情况下，需要给a和日期的标签，添加float
+
+	*/
+	/*
+		做文本溢出的条件：
+			1.保证文本不换行（在一行内显示）：white-space: nowrap;
+			2.不换行文本会溢出容器，所以让溢出的部分隐藏：overflow:hidden;
+			3.隐藏的部分以省略号显示：text-overflow: ellipsis;
+			4.要做文本溢出，容器一定要有宽度:width: 197px;
+
+
+overflow: visible;
+
+	*/
+.newsC{width: 240px;height: 240px;background: #f1f1f1;float: left;}
+.newsR{width: 259px;height: 240px;background: #fbfbfb;float: left;}

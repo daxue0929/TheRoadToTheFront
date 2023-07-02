@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js的三种跳转方式</title>
+	<style>
+		button{
+			display: block;
+			width: 100px;
+			height: 70px;
+			margin: 200px auto;
+		}
+		a{
+			display: block;
+			width: 50px;
+			height: 30px;
+			background: #56A89CFF;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="fun()">跳转</button>
+	<a href="javascript:void(0)" onclick="openWin(this)">点击</a>
+	<button onclick="locationSrc()">跳转</button>
+	<script>
+		function fun() {
+			window.open("http://www.baidu.com/");
+		}
+		function openWin(obj) {
+			obj.target = "_blank";
+			obj.href = "http://www.baidu.com/";
+			obj.click();
+		}
+		function locationSrc(){
+			window.location.href = "http://www.baidu.com/"
+		}
+	</script>
+</body>
+</html>
