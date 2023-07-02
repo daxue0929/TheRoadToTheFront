@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="pre-init">
-      <change afterPath="$PROJECT_DIR$/projects/readme" afterDir="false" />
+    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="readme">
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/bookmarks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/react/study/project/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/framework/react/study/project/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.prod.conf.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +24,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Vue Single File Component" />
         <option value="SCSS File" />
+        <option value="tsconfig.json" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -61,6 +69,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test01.html" root0="SKIP_INSPECTION" />
@@ -223,29 +239,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webGL/ThreeJsTest/node_modules/three/src/Three.d.ts" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.import.notification.dismissed" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
       <recent name="E:\TheRoadToTheFront\vue\study\project3" />
       <recent name="E:\TheRoadToTheFront\vue" />
       <recent name="E:\TheRoadToTheFront\vue\study\project1\src\assets" />
       <recent name="E:\TheRoadToTheFront\vue\study\project2\src\assets" />
-      <recent name="E:\TheRoadToTheFront\vue\study\my-project\my-project\src\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
       <recent name="$PROJECT_DIR$/module" />
       <recent name="$PROJECT_DIR$/framework" />
       <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$/DayAndDay" />
-      <recent name="E:\TheRoadToTheFront" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.test01.html">
@@ -402,7 +418,7 @@
       <workItem from="1560909738070" duration="13055000" />
       <workItem from="1683366434831" duration="1269000" />
       <workItem from="1684221610861" duration="2415000" />
-      <workItem from="1688317479243" duration="2642000" />
+      <workItem from="1688317479243" duration="3859000" />
     </task>
     <task id="LOCAL-00001" summary="es6入门1">
       <created>1548078866952</created>
@@ -572,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688319246936</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="readme">
+      <created>1688320475905</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1688320475905</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -669,7 +692,8 @@
     <MESSAGE value="next.next" />
     <MESSAGE value="表白网页" />
     <MESSAGE value="pre-init" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre-init" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">

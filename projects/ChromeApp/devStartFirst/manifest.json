@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "mybookmarks",
+  "description": "a chrome extension for bookmarks",
+  "icons": {
+    "128": "images/icon.png",
+    "16": "images/icon.png"
+  },
+
+  "action": {
+    "default_title": "书签概览",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

@@ -65,7 +65,7 @@ module.exports = merge(baseWebpackConfig, {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'common/manifest',
+      name: 'common/manifest.json',
       chunks: ['common/vendor']
     }),
     new MpvueVendorPlugin({
