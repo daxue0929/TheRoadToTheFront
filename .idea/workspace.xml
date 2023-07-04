@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="readme">
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/bookmarks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.html" afterDir="false" />
+    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/react/study/project/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/framework/react/study/project/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.dev.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/study/my-project/my-project/build/webpack.prod.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,13 +258,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.test01.html">
+    <configuration type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/module/es6/03变量的解构赋值">
+      <method v="2" />
+    </configuration>
     <configuration name="ajax.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheRoadToTheFront/day01/ajax.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="test01.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheRoadToTheFront/webGL/ThreeJsTest/test01.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/module/es6/03变量的解构赋值">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -418,7 +411,8 @@
       <workItem from="1560909738070" duration="13055000" />
       <workItem from="1683366434831" duration="1269000" />
       <workItem from="1684221610861" duration="2415000" />
-      <workItem from="1688317479243" duration="3859000" />
+      <workItem from="1688317479243" duration="4323000" />
+      <workItem from="1688447769245" duration="1148000" />
     </task>
     <task id="LOCAL-00001" summary="es6入门1">
       <created>1548078866952</created>
@@ -595,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688320475905</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境">
+      <created>1688321754249</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1688321754250</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -693,7 +694,8 @@
     <MESSAGE value="表白网页" />
     <MESSAGE value="pre-init" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">

@@ -1,4 +1,11 @@
 #app{
-    width: 700px;
-    height: 400px;
+    width: 800px;
+    height: 568px;
+}
+
+body{
+/*
+    加了透明背景没有用，
+    https://stackoverflow.com/questions/11944465/make-chrome-extension-popup-window-transparent
+*/
 }
