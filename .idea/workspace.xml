@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境">
+    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="[ChromeApp][devStartFirst] test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/docs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/book-web/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +86,7 @@
     <setting file="file://$PROJECT_DIR$/vue/study/project2/src/store/store.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/store/store.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vue/study/1.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/projects/book-web/src/pages.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/regist/Regist.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/framework/react/study/project/src/App.js" root0="FORCE_HIGHLIGHTING" />
@@ -158,6 +160,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/projects/book-web/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="105" />
     <option name="y" value="37" />
@@ -227,6 +232,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -238,7 +244,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.import.notification.dismissed" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/projects/book-web/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -412,7 +419,9 @@
       <workItem from="1683366434831" duration="1269000" />
       <workItem from="1684221610861" duration="2415000" />
       <workItem from="1688317479243" duration="4323000" />
-      <workItem from="1688447769245" duration="1148000" />
+      <workItem from="1688447769245" duration="1199000" />
+      <workItem from="1688886606692" duration="188000" />
+      <workItem from="1689174114072" duration="3130000" />
     </task>
     <task id="LOCAL-00001" summary="es6入门1">
       <created>1548078866952</created>
@@ -596,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688321754250</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[ChromeApp][devStartFirst] test">
+      <created>1688450453855</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688450453855</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -695,7 +711,8 @@
     <MESSAGE value="pre-init" />
     <MESSAGE value="readme" />
     <MESSAGE value="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境" />
+    <MESSAGE value="[ChromeApp][devStartFirst] test" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ChromeApp][devStartFirst] test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">
