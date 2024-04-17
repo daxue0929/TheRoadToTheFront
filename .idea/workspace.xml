@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="[ChromeApp][devStartFirst] test">
+    <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="添加ignore文件">
+      <change afterPath="$PROJECT_DIR$/vue/study01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/views/Test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/src/views/home/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/study01/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TheRoadToTheFront" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,26 +93,26 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test01.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/routes.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/tesr01.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/test/Test.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/demo01.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/index.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/store.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/index/index.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/components/RowSpace.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/store/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/store/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/1.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/projects/book-web/src/pages.json" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/regist/Regist.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/framework/react/study/project/src/App.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/demo/Demo2Css.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/framework/react/study/project/src/Todolist.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/demo01.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/tesr01.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test01.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/projects/book-web/src/pages.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/1.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/index.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/store.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/index/index.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/store/store.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/components/RowSpace.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/regist/Regist.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/test/Test.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/routes.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/mutation-types.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/store.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/demo/Demo2Css.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/store/store.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -150,12 +170,6 @@
         <option value="$PROJECT_DIR$/webGL/ThreeJsTest/test01.html" />
       </list>
     </option>
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -231,30 +245,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettier.import.notification.dismissed" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/projects/book-web/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "last_opened_file_path": "E:/open_software/webstorm/TheRoadToTheFront/vue/study01/src/views",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "ts.external.directory.path": "D:\\dev\\JetBrains\\WebStorm 2022.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\open_software\webstorm\TheRoadToTheFront\vue\study01\src\views" />
       <recent name="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
       <recent name="E:\TheRoadToTheFront\vue\study\project3" />
       <recent name="E:\TheRoadToTheFront\vue" />
       <recent name="E:\TheRoadToTheFront\vue\study\project1\src\assets" />
-      <recent name="E:\TheRoadToTheFront\vue\study\project2\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
@@ -612,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688450453855</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="添加ignore文件">
+      <created>1713321684051</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713321684051</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -687,7 +699,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="es6入门1" />
     <MESSAGE value="es6入门2" />
     <MESSAGE value="es6入门3" />
     <MESSAGE value="react小基础" />
@@ -712,7 +723,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="[ChromeApp][devStartFirst] 搭建谷歌插件hello world环境" />
     <MESSAGE value="[ChromeApp][devStartFirst] test" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ChromeApp][devStartFirst] test" />
+    <MESSAGE value="添加ignore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加ignore文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue/study/project1/src/pages/index/main/InTrainingInfo.vue">
