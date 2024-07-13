@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0e3d2375-e3d0-4b37-8620-89b0479bd336" name="Default Changelist" comment="[ChromeApp][devStartFirst] test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/projects/book-web/src/pages/index/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/my-project/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TheRoadToTheFront.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/react/study/project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/framework/react/study/project/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TheRoadToTheFront" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,26 +81,26 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test01.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/routes.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/tesr01.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/test/Test.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/demo01.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/index.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/store.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/index/index.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/components/RowSpace.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/store/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/store/store.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/1.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/projects/book-web/src/pages.json" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/regist/Regist.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/framework/react/study/project/src/App.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/demo/Demo2Css.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/framework/react/study/project/src/Todolist.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/demo01.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/CDNdemo/tesr01.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/webGL/ThreeJsTest/test01.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/projects/book-web/src/pages.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/1.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/index.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/counter/store.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/pages/index/index.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/my-project/my-project/src/store/store.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/components/RowSpace.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/regist/Regist.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/pages/test/Test.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/routes.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/mutation-types.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project1/src/store/store.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/demo/Demo2Css.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vue/study/project2/src/store/store.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -151,16 +159,11 @@
       </list>
     </option>
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/framework/react/study/project/package.json" />
     <dismissed value="$PROJECT_DIR$/projects/book-web/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -231,23 +234,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettier.import.notification.dismissed" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/projects/book-web/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/ChromeApp/devStartFirst/images" />
@@ -422,6 +422,9 @@
       <workItem from="1688447769245" duration="1199000" />
       <workItem from="1688886606692" duration="188000" />
       <workItem from="1689174114072" duration="3130000" />
+      <workItem from="1710140638868" duration="76000" />
+      <workItem from="1710140725552" duration="2527000" />
+      <workItem from="1720835252742" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="es6入门1">
       <created>1548078866952</created>
