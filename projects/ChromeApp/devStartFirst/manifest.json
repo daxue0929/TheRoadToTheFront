@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "version": "2.0",
-  "name": "mybookmarks",
-  "description": "a chrome extension for bookmarks",
+  "name": "下载器",
+  "description": "谷歌插件下载器",
   "icons": {
     "128": "images/icon.png",
     "16": "images/icon.png"
@@ -10,7 +10,7 @@
 
   "action": {
     "default_title": "书签概览",
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   },
   "permissions": [
     "bookmarks"
