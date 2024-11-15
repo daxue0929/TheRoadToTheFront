@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {computed, onMounted, reactive, ref, watch} from 'vue'
 import {timeSelectProps} from "element-plus";
+import Test01 from "@/components/custom/Test01.vue";
 
 const count = ref(0)
 
@@ -64,6 +65,8 @@ function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+const test01Component = ref({title: "Hello Title"});
+
 
 
 </script>
@@ -117,6 +120,13 @@ function sleep(ms: number) {
       </p>
       <p>{{ answer }}</p>
     </div>
+    <br>
+
+    <div>
+      <Test01 :title="test01Component.title"/>
+    </div>
+    <br />
+
 
 
 
@@ -127,6 +137,7 @@ function sleep(ms: number) {
 main{
   max-width: 1200px;
   margin: 50px auto 0;
+  background-color: rgb(241,241,241);
 }
 .test2 span:first-child{
   cursor: pointer;
