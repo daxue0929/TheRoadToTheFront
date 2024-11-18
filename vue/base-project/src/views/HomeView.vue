@@ -2,7 +2,7 @@
 import {hello} from '@/api/hello'
 
 const fetchHello = async () => {
-  return await hello({id: 2, name: 'test'});
+  return await hello();
 }
 
 fetchHello().then(resp => {

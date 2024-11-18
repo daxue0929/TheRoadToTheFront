@@ -68,6 +68,7 @@ function sleep(ms: number) {
 const test01Component = ref({title: "Hello Title"});
 
 
+console.log("import.meta.env", import.meta.env)
 
 </script>
 
@@ -121,6 +122,7 @@ const test01Component = ref({title: "Hello Title"});
       <p>{{ answer }}</p>
     </div>
     <br>
+
 
     <div>
       <Test01 :title="test01Component.title"/>
