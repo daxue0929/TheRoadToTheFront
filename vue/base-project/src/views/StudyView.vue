@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {computed, onMounted, reactive, ref, watch} from 'vue'
-import {timeSelectProps} from "element-plus";
 import Test01 from "@/components/custom/Test01.vue";
 
 const count = ref(0)
@@ -129,9 +128,9 @@ console.log("import.meta.env", import.meta.env)
     </div>
     <br />
 
-
-
-
+    <div>
+      <svg-icon name="charts-curve"></svg-icon>
+    </div>
   </main>
 </template>
 
@@ -146,6 +145,11 @@ main{
 }
 .form-input{
   width: 300px;
+}
+
+svg{
+  width: 50px;
+  height: 50px;
 }
 
 </style>

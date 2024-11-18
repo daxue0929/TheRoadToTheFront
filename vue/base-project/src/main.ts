@@ -11,8 +11,13 @@ import 'element-plus/dist/index.css'
 
 // 引入svg插件的代码
 import 'virtual:svg-icons-register'
-import zhCn from 'element-plus/dist/locale/zh-cn.min.mjs'
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import zhCn from "element-plus/dist/locale/zh-cn.min.mjs"
+
+// 注册全局组件
+import globalComponents from './components/global'
 
 const app = createApp(App)
 
@@ -21,5 +26,5 @@ app.use(store)
 app.use(ElementPlus, {
     locale: zhCn
 })
-
+app.use(globalComponents)
 app.mount('#app')
