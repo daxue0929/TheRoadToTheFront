@@ -22,21 +22,33 @@ function Card({ children }) {
     );
 }
 
+function handleClick() {
+    alert('You clicked me!');
+}
+
 export default () => (
     <div>
         <h1>Welcome to React-Static</h1>
         <section>
             <h2>Amazing scientists</h2>
-            <Profile />
+            <Profile/>
         </section>
-        <hr />
+        <hr/>
 
         <Card>
             <Avatar size={100} person={{
                 name: 'Katsuko Saruhashi',
                 imageId: 'YfeOqp2'
-            }} />
+            }}/>
         </Card>
+        <hr/>
+
+        <button onClick={handleClick}>
+            Click me
+        </button>
+
+
+
     </div>
 
 )
