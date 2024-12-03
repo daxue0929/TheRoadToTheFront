@@ -30,3 +30,6 @@ coverage
 
 *.tsbuildinfo
 /vue/**/.vscode/
+
+**/dist/
+**/node_modules/
