@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { useLocation } from "@reach/router";
 import '../css/day01.css'
 
 // 网页常用颜色查询
@@ -40,6 +41,14 @@ function Panel({title, children, isActive, onShow}) {
 }
 
 export default () => {
+
+    const location = useLocation();
+
+    console.log("当前路由路径：", location.pathname);
+
+    console.log(process.env.PORT)
+    console.log(process.env.REACT_APP_PORT)
+
 
     const [count, setCount] = useState(0)
 
