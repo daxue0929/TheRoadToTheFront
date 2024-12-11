@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\src\\pages"
+      }
+    ],
+    "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website"
+  ],
+  "paths": {
+    "ROOT": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website",
+    "SRC": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\src",
+    "DIST": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\dist",
+    "ASSETS": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\dist",
+    "PLUGINS": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\plugins",
+    "TEMP": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\tmp",
+    "ARTIFACTS": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\artifacts",
+    "PUBLIC": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\public",
+    "NODE_MODULES": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\node_modules",
+    "EXCLUDE_MODULES": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\node_modules",
+    "PACKAGE": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\package.json",
+    "HTML_TEMPLATE": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\dist\\index.html",
+    "STATIC_DATA": "E:\\open_software\\webstorm\\TheRoadToTheFront\\framework\\react\\study\\static-website\\dist\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
