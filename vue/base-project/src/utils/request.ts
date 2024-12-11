@@ -15,10 +15,11 @@ const request = axios.create({
     headers: {}
 });
 
+// 请求拦截器
 request.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
     nProgress.start();
-
+    //todo... 参考若依的话, 这里是不是可以再做一层封装, 统一连接query参数, body转为json之类的
     config.headers["Content-Type"] = "application/json"
     return config;
 }, function (error) {
@@ -26,7 +27,7 @@ request.interceptors.request.use(function (config) {
     return Promise.reject(error);
 });
 
-// 添加响应拦截器
+// 响应拦截器
 request.interceptors.response.use(function (response: AxiosResponse<HttpResponse>) {
     nProgress.done()
     console.log("ceshi", response.data)

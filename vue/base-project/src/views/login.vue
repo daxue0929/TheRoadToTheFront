@@ -1,6 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import {ref, watchEffect} from 'vue';
 import { ElForm, ElFormItem, ElInput, ElButton, ElCard } from 'element-plus';
+import {setToken} from "@/utils/auth";
+import {useRouter, useRoute, type LocationQueryValue} from "vue-router";
+import {login} from '@/api/login'
+
+
+
+
+
+defineOptions({
+  name: 'Login',
+})
+
+const router = useRouter();
+const route = useRoute();
+
+// 定义响应式变量 redirect 来存储 query 中的 redirect 参数
+let redirect = ref('/');
 
 // 登录表单的数据模型
 const form = ref({
@@ -21,11 +38,21 @@ const rules = ref({
 // 表单引用，用于手动验证
 const loginForm = ref<InstanceType<typeof ElForm>>();
 
+watchEffect(() => {
+  if (route.query.redirect != null) {
+    redirect.value = route.query.redirect as string;
+  }
+});
+
 // 登录处理函数
 const handleLogin = async () => {
   try {
     await loginForm.value?.validate();
-    // 1. todo...请求接口
+    login({username: form.value.username, password: form.value.password})
+        .then((resp) => {
+          setToken(resp.token)
+          router.push({path: redirect.value || "/"}).catch(() => {})
+        })
     console.log('登录成功', form.value);
   } catch (error) {
     console.log('表单验证失败');

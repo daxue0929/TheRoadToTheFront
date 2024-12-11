@@ -5,3 +5,4 @@ declare module '*.vue' {
     export default component;
 }
 
+type ElementUIPlusSize = import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "small" | "default" | "large", never>>;
