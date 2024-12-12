@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import {ref, watchEffect} from 'vue';
-import { ElForm, ElFormItem, ElInput, ElButton, ElCard } from 'element-plus';
-import {setToken} from "@/utils/auth";
+import {ElForm, ElFormItem, ElInput, ElButton, ElCard} from 'element-plus';
 import {useRouter, useRoute, type LocationQueryValue} from "vue-router";
-import {login} from '@/api/login'
+import useStore from '@/store'
 
-
-
+const {userStore} = useStore()
 
 
 defineOptions({
@@ -28,10 +26,10 @@ const form = ref({
 // 表单验证规则
 const rules = ref({
   username: [
-    { required: true, message: '请输入用户名', trigger: 'blur' }
+    {required: true, message: '请输入用户名', trigger: 'blur'}
   ],
   password: [
-    { required: true, message: '请输入密码', trigger: 'blur' }
+    {required: true, message: '请输入密码', trigger: 'blur'}
   ]
 });
 
@@ -48,9 +46,8 @@ watchEffect(() => {
 const handleLogin = async () => {
   try {
     await loginForm.value?.validate();
-    login({username: form.value.username, password: form.value.password})
-        .then((resp) => {
-          setToken(resp.token)
+    userStore.Login({username: form.value.username, password: form.value.password})
+        .then(() => {
           router.push({path: redirect.value || "/"}).catch(() => {})
         })
     console.log('登录成功', form.value);

@@ -6,3 +6,10 @@ declare module '*.vue' {
 }
 
 type ElementUIPlusSize = import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "small" | "default" | "large", never>>;
+
+class UserInfo {
+    username: string
+    password: string
+    code: string
+    uuid: string
+}
