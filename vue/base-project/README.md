@@ -10,6 +10,8 @@
 |   |-- components
 |   |-- router
 |   |   |-- index.ts    # 路由
+|   |-- store
+|   |   |-- index.ts    # 状态管理
 |   |-- utils
 |   |-- views           # 页面
 |   |-- App.vue

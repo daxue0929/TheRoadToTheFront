@@ -1,5 +1,10 @@
 import { MockMethod, MockConfig } from 'vite-plugin-mock'
 
+/**
+ * 文档
+ * https://github.com/vbenjs/vite-plugin-mock/blob/HEAD/README.zh_CN.md
+ */
+
 function createUserList() {
     return [
         {
