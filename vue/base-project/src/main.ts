@@ -3,28 +3,24 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import { createPinia } from "pinia";
 import 'font-awesome/css/font-awesome.min.css' //引入字体图标
+
+import Cookies from 'js-cookie'
 
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-// 引入svg插件的代码
-import 'virtual:svg-icons-register'
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import zhCn from "element-plus/dist/locale/zh-cn.min.mjs"
-
-// 注册全局组件
-import globalComponents from './components/global'
+import './permission' // permission control
 
 const app = createApp(App)
+const store = createPinia();
+
+app.use(ElementPlus, {
+    size: Cookies.get('size') as "" | "small" | "default" | "large" || 'default'
+})
 
 app.use(router)
 app.use(store)
-app.use(ElementPlus, {
-    locale: zhCn
-})
-app.use(globalComponents)
+
 app.mount('#app')

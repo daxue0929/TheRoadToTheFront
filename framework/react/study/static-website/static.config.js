@@ -1,7 +1,13 @@
 import path from 'path'
 import axios from 'axios'
 
+import {config} from './global.config'
+
 export default {
+  devServer: {
+    host: 'localhost',
+    port: config.PORT || 3000,
+  },
   getRoutes: async () => {
     const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'

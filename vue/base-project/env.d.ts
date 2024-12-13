@@ -1,8 +1,16 @@
 /// <reference types="vite/client" />
 declare module '*.vue' {
     import type {DefineComponent} from 'vue';
-    const component:DefineComponent<object,object,any>
+    const component:DefineComponent<{},{},any>
     export default component;
 }
 
-// declare module 'element-plus/dist/locale/zh-cn.min.mjs';
+type ElementUIPlusSize = import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "small" | "default" | "large", never>>;
+
+
+class UserInfo {
+    username: string
+    password: string
+    code: string
+    uuid: string
+}
