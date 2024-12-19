@@ -12,7 +12,28 @@ nvm use nvm19.0.1
 #ps:npm的版本也会切换。
 ```
 
-## 三、文件夹说明
+## 三、代码结构图
+```bash
+|-- DayAndDay
+|   |-- day01
+|-- example
+|   |-- blueProductwebsite
+|   |-- file
+|   |-- my-project
+|-- framework
+|   |-- react
+|-- module
+|-- projects
+|   |-- book-web
+|   |-- ChromeApp
+|-- vue
+|   |-- base-nuxt
+|   |-- base-project
+|   |-- blog
+
+
+
+```
 - `DayAndDay` 以day01、day02的格式进行分文件夹管理，主要是一些基础的html、css、js的测试
 - `example` 一些略微完整的示例
 - `framework` 框架相关的内容，以react、vue进行分组，下面的子目录就是其脚手架创建出来的一个个完整的项目。
